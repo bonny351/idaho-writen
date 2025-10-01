@@ -10,7 +10,12 @@
           "details": ["Stop, Yield, Speed Limit", "Why: Prevent collisions", "How: Stop signs halt vehicles; speed limits control safe speeds", "Logic: Following rules ensures predictable driving"],
           "scenario": "Ignoring a stop sign at a 4-way intersection can cause a collision.",
           "quiz": [
-            {"question": "What shape is a stop sign?", "type": "multiple-choice", "options": ["Octagon", "Triangle", "Diamond"], "answer": "Octagon"}
+            {
+              "question": "What shape is a stop sign?",
+              "type": "multiple-choice",
+              "options": ["Octagon", "Triangle", "Diamond"],
+              "answer": "Octagon"
+            }
           ]
         },
         {
@@ -19,7 +24,12 @@
           "details": ["Yellow diamond-shaped: curves, slippery roads", "Why: Gives advance notice of dangers", "Logic: Early warning reduces accidents"],
           "scenario": "Ignoring a 'Curve Ahead' sign may result in losing control.",
           "quiz": [
-            {"question": "Why are warning signs usually yellow?", "type": "multiple-choice", "options": ["To alert drivers to hazards", "Because it is the most common color", "To indicate directions"], "answer": "To alert drivers to hazards"}
+            {
+              "question": "Why are warning signs usually yellow?",
+              "type": "multiple-choice",
+              "options": ["To alert drivers to hazards", "Because it is the most common color", "To indicate directions"],
+              "answer": "To alert drivers to hazards"
+            }
           ]
         },
         {
@@ -28,7 +38,12 @@
           "details": ["Green = directions, Blue = services, Brown = recreation", "Octagon = Stop, Triangle = Yield, Diamond = Warning", "Logic: Consistency reduces confusion"],
           "scenario": "A brown sign with a tent icon indicates a recreational area.",
           "quiz": [
-            {"question": "What does a green sign indicate?", "type": "multiple-choice", "options": ["Directions", "Hazard", "Services"], "answer": "Directions"}
+            {
+              "question": "What does a green sign indicate?",
+              "type": "multiple-choice",
+              "options": ["Directions", "Hazard", "Services"],
+              "answer": "Directions"
+            }
           ]
         },
         {
@@ -37,7 +52,12 @@
           "details": ["Recognize signs quickly", "Respond appropriately"],
           "scenario": "Approaching a yield sign requires checking traffic.",
           "quiz": [
-            {"question": "At a yield sign you should:", "type": "multiple-choice", "options": ["Slow down or stop if needed", "Speed up", "Ignore"], "answer": "Slow down or stop if needed"}
+            {
+              "question": "At a yield sign you should:",
+              "type": "multiple-choice",
+              "options": ["Slow down or stop if needed", "Speed up", "Ignore"],
+              "answer": "Slow down or stop if needed"
+            }
           ]
         },
         {
@@ -46,7 +66,12 @@
           "details": ["Reinforces learning"],
           "scenario": "Understanding signs reduces accidents.",
           "quiz": [
-            {"question": "What is the main purpose of regulatory signs?", "type": "multiple-choice", "options": ["To enforce rules and ensure safety", "To provide tourist information", "To indicate weather conditions"], "answer": "To enforce rules and ensure safety"}
+            {
+              "question": "What is the main purpose of regulatory signs?",
+              "type": "multiple-choice",
+              "options": ["To enforce rules and ensure safety", "To provide tourist information", "To indicate weather conditions"],
+              "answer": "To enforce rules and ensure safety"
+            }
           ]
         }
       ]
@@ -61,7 +86,12 @@
           "details": ["Urban:25–35 mph, Rural:55 mph, Interstate:65–75 mph", "Why: Maintain traffic flow", "Logic: Exceeding limits increases crash risk"],
           "scenario": "Driving 80 mph in a 65 mph zone reduces reaction time.",
           "quiz": [
-            {"question": "Why obey speed limits?", "type": "multiple-choice", "options": ["Reduces accident risk", "To avoid tickets"], "answer": "Reduces accident risk"}
+            {
+              "question": "Why obey speed limits?",
+              "type": "multiple-choice",
+              "options": ["Reduces accident risk", "To avoid tickets"],
+              "answer": "Reduces accident risk"
+            }
           ]
         },
         {
@@ -70,7 +100,12 @@
           "details": ["Yield to vehicles on your right", "Always yield to pedestrians", "Logic: Predictable yielding prevents crashes"],
           "scenario": "Failing to yield to the car on your right can cause a crash.",
           "quiz": [
-            {"question": "Who has right-of-way if two vehicles arrive simultaneously?", "type": "multiple-choice", "options": ["Vehicle on the right", "Vehicle on the left"], "answer": "Vehicle on the right"}
+            {
+              "question": "Who has right-of-way if two vehicles arrive simultaneously?",
+              "type": "multiple-choice",
+              "options": ["Vehicle on the right", "Vehicle on the left"],
+              "answer": "Vehicle on the right"
+            }
           ]
         },
         {
@@ -79,7 +114,12 @@
           "details": ["Pass on left only", "Never pass on hills, curves, intersections", "Logic: Avoid zones where visibility is limited"],
           "scenario": "Attempting to pass on a curve can cause a head-on collision.",
           "quiz": [
-            {"question": "Where is it unsafe to pass another vehicle?", "type": "multiple-choice", "options": ["Hills or curves", "Straight road", "Interstate"], "answer": "Hills or curves"}
+            {
+              "question": "Where is it unsafe to pass another vehicle?",
+              "type": "multiple-choice",
+              "options": ["Hills or curves", "Straight road", "Interstate"],
+              "answer": "Hills or curves"
+            }
           ]
         },
         {
@@ -88,7 +128,12 @@
           "details": ["Check surroundings before passing", "Yield appropriately"],
           "scenario": "Failing to yield when merging causes collisions.",
           "quiz": [
-            {"question": "At a merge lane, you should:", "type": "multiple-choice", "options": ["Yield to existing traffic", "Speed up", "Ignore merging rules"], "answer": "Yield to existing traffic"}
+            {
+              "question": "At a merge lane, you should:",
+              "type": "multiple-choice",
+              "options": ["Yield to existing traffic", "Speed up", "Ignore merging rules"],
+              "answer": "Yield to existing traffic"
+            }
           ]
         },
         {
@@ -97,114 +142,15 @@
           "details": ["Scenario-based practice"],
           "scenario": "Understanding rules prevents collisions.",
           "quiz": [
-            {"question": "Why are passing rules important?", "type": "multiple-choice", "options": ["To avoid collisions on limited visibility roads", "To finish trips faster"], "answer": "To avoid collisions on limited visibility roads"}
-          ]
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Safe Driving Practices",
-      "parts": [
-        {
-          "title": "Seat Belts & Following Distance",
-          "content": "Seat belts protect in crashes.",
-          "details": ["Seat belts required for all passengers", "3-second following rule", "Logic: Provides reaction time"],
-          "scenario": "Tailgating reduces reaction time.",
-          "quiz": [
-            {"question": "What is the purpose of the 3-second rule?", "type": "multiple-choice", "options": ["Maintain safe following distance", "Keep traffic moving fast"], "answer": "Maintain safe following distance"}
-          ]
-        },
-        {
-          "title": "Turn Signals & DUI",
-          "content": "Signaling communicates intentions.",
-          "details": ["Signal at least 100 ft before turning", "DUI limit:0.08% adults,0% under 21", "Logic: Prevents misunderstandings"],
-          "scenario": "Not signaling can cause sudden braking.",
-          "quiz": [
-            {"question": "What is the adult DUI limit in Idaho?", "type": "multiple-choice", "options": ["0.08% BAC", "0.10% BAC"], "answer": "0.08% BAC"}
-          ]
-        },
-        {
-          "title": "Defensive Driving",
-          "content": "Anticipate hazards and stay alert.",
-          "details": ["Scan road ahead", "Adjust speed and lane position", "Logic: Prevents accidents"],
-          "scenario": "Failing to check intersections can lead to collisions.",
-          "quiz": [
-            {"question": "Defensive driving helps prevent:", "type": "multiple-choice", "options": ["Accidents", "Fuel usage"], "answer": "Accidents"}
-          ]
-        },
-        {
-          "title": "Distraction & Fatigue",
-          "content": "Avoid distractions and drowsy driving.",
-          "details": ["No texting", "Take breaks on long trips", "Logic: Focused driving reduces accidents"],
-          "scenario": "Texting while driving increases crash risk.",
-          "quiz": [
-            {"question": "Why avoid distractions?", "type": "multiple-choice", "options": ["Reduce crash risk", "Save time"], "answer": "Reduce crash risk"}
-          ]
-        },
-        {
-          "title": "Mini Quiz",
-          "content": "Review safe driving practices.",
-          "details": ["Scenario-based review"],
-          "scenario": "Following safe practices prevents collisions.",
-          "quiz": [
-            {"question": "Why wear a seat belt?", "type": "multiple-choice", "options": ["Protect occupants in a crash", "Comfort only"], "answer": "Protect occupants in a crash"}
-          ]
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Special Situations",
-      "parts": [
-        {
-          "title": "School Buses & Emergency Vehicles",
-          "content": "Stop for buses and yield to emergency vehicles.",
-          "details": ["Stop for school buses with red lights", "Pull over for emergency vehicles", "Logic: Priority to emergencies"],
-          "scenario": "Ignoring a bus endangers children.",
-          "quiz": [
-            {"question": "What to do for a school bus with red lights?", "type": "multiple-choice", "options": ["Stop until lights off", "Pass quickly"], "answer": "Stop until lights off"}
-          ]
-        },
-        {
-          "title": "Railroad Crossings & Construction Zones",
-          "content": "Follow instructions and slow down.",
-          "details": ["Stop at crossings with gates down", "Fines double in construction zones", "Logic: Protects workers and prevents collisions"],
-          "scenario": "Speeding in a construction zone increases risk.",
-          "quiz": [
-            {"question": "Why slow down in construction zones?", "type": "multiple-choice", "options": ["Protect workers", "Avoid fines only"], "answer": "Protect workers"}
-          ]
-        },
-        {
-          "title": "Weather Conditions",
-          "content": "Adjust driving for rain, snow, wind, fog.",
-          "details": ["Reduce speed", "Increase following distance", "Logic: Wet or icy roads increase stopping distance"],
-          "scenario": "Hydroplaning occurs when driving too fast on wet roads.",
-          "quiz": [
-            {"question": "What should you do in snow?", "type": "multiple-choice", "options": ["Slow down, increase following distance", "Drive same speed"], "answer": "Slow down, increase following distance"}
-          ]
-        },
-        {
-          "title": "Night Driving",
-          "content": "Reduce speed and increase alertness at night.",
-          "details": ["Use headlights", "Watch for pedestrians", "Logic: Reduced visibility increases risk"],
-          "scenario": "Driving too fast at night can hide hazards.",
-          "quiz": [
-            {"question": "Night driving requires:", "type": "multiple-choice", "options": ["More caution and reduced speed", "Same as day"], "answer": "More caution and reduced speed"}
-          ]
-        },
-        {
-          "title": "Mini Quiz",
-          "content": "Practice special situations.",
-          "details": ["Scenario review of emergency, weather, and night driving"],
-          "scenario": "Understanding special situations prevents accidents.",
-          "quiz": [
-            {"question": "Why pull over for emergency vehicles?", "type": "multiple-choice", "options": ["Allow quick passage", "For fun"], "answer": "Allow quick passage"}
+            {
+              "question": "Why are passing rules important?",
+              "type": "multiple-choice",
+              "options": ["To avoid collisions on limited visibility roads", "To finish trips faster"],
+              "answer": "To avoid collisions on limited visibility roads"
+            }
           ]
         }
       ]
     }
   ]
 }
-
-
