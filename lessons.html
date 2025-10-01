@@ -14,10 +14,11 @@ nav a { margin: 0 10px; text-decoration: none; font-weight: bold; }
 .lesson-part { display: none; }
 .lesson-part.active { display: block; }
 .disabled-link { cursor: not-allowed; opacity: 0.5; pointer-events: none; }
-.quiz-feedback { margin-top: 0.5rem; font-weight: bold; }
 .lesson-progress { display: flex; gap: 0.5rem; margin-bottom: 1rem; justify-content: center; }
 .lesson-progress span { width: 20px; height: 20px; display: inline-block; border-radius: 50%; background-color: #ccc; }
 .lesson-progress span.completed { background-color: #16a34a; }
+.quiz-option { cursor: pointer; margin: 0.25rem 0; display: flex; align-items: center; }
+.square { width: 20px; height: 20px; background: #ccc; display: inline-block; margin-right: 8px; border-radius: 3px; }
 </style>
 </head>
 <body class="min-h-screen flex flex-col">
@@ -39,33 +40,68 @@ nav a { margin: 0 10px; text-decoration: none; font-weight: bold; }
   </div>
 </main>
 
-<!-- Final quiz section -->
+<!-- Final quiz -->
 <section id="final" class="lesson">
   <h2 class="text-2xl font-bold">Final Quiz</h2>
   <p class="mt-2 text-gray-700">Congratulations! Take the final test here after completing all lessons.</p>
 </section>
 
 <script>
-let lessonsData = [];
-let lessonsCompleted = {};
-let totalLessons = 0;
+let lessonsData = [
+  {
+    title: "Basic Traffic Rules",
+    why: "Know these to stay safe on the road.",
+    parts: [
+      {
+        title: "Signs",
+        content: "Learn the basic traffic signs.",
+        quiz: [
+          {
+            question: "What does a stop sign mean?",
+            options: ["Stop completely", "Slow down only", "Ignore"],
+            answer: "Stop completely"
+          },
+          {
+            question: "What does a yield sign mean?",
+            options: ["Stop completely", "Give way to others", "Go fast"],
+            answer: "Give way to others"
+          }
+        ]
+      },
+      {
+        title: "Speed Limits",
+        content: "Observe posted speed limits.",
+        quiz: [
+          {
+            question: "Max speed in residential area?",
+            options: ["25 mph", "50 mph", "70 mph"],
+            answer: "25 mph"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Safe Driving Practices",
+    why: "Safe driving prevents accidents.",
+    parts: [
+      {
+        title: "Seat Belts",
+        content: "Always wear your seat belt.",
+        quiz: [
+          {
+            question: "Should you wear a seatbelt?",
+            options: ["Yes", "No"],
+            answer: "Yes"
+          }
+        ]
+      }
+    ]
+  }
+];
 
-// Load lessons JSON
-fetch('driving_lessons.json')
-.then(res => {
-  if (!res.ok) throw new Error('Failed to fetch JSON.');
-  return res.json();
-})
-.then(data => {
-  lessonsData = data.lessons;
-  totalLessons = lessonsData.length;
-  renderLessons();
-  renderProgress();
-})
-.catch(err => {
-  document.getElementById('lessons-container').innerHTML =
-    "<p class='text-red-500'>Failed to load lessons. Please try again later.</p>";
-});
+let lessonsCompleted = {};
+let totalLessons = lessonsData.length;
 
 // Render lesson progress tracker
 function renderProgress(){
@@ -83,6 +119,7 @@ function renderProgress(){
 function renderLessons(){
   const container = document.getElementById('lessons-container');
   container.innerHTML = '';
+
   lessonsData.forEach((lesson, idx)=>{
     const lessonSection = document.createElement('section');
     lessonSection.id = 'lesson'+(idx+1);
@@ -108,60 +145,57 @@ function renderLessons(){
       partContent.textContent = part.content;
       partDiv.appendChild(partContent);
 
-      if(part.scenario){
-        const scenario = document.createElement('p');
-        scenario.innerHTML = `<strong>Scenario:</strong> ${part.scenario}`;
-        partDiv.appendChild(scenario);
-      }
-
       // Quiz
       if(part.quiz){
-        const quizDiv = document.createElement('div');
-        quizDiv.innerHTML = `<p class="mt-2 font-bold">Mini Quiz</p>`;
-        const form = document.createElement('form');
-        form.id = `quiz${idx+1}-${pIdx+1}`;
-
         part.quiz.forEach((q,qIdx)=>{
           const qDiv = document.createElement('div');
           qDiv.className='mb-2';
-          const label = document.createElement('p');
-          label.textContent = `${qIdx+1}. ${q.question}`;
-          qDiv.appendChild(label);
+          const qText = document.createElement('p');
+          qText.textContent = `${qIdx+1}. ${q.question}`;
+          qDiv.appendChild(qText);
 
-          const shuffledOptions = q.options
-            .map(opt => ({ text: opt, isCorrect: opt === q.answer, sort: Math.random() }))
-            .sort((a,b)=> a.sort-b.sort);
+          q.options.forEach(opt=>{
+            const optDiv = document.createElement('div');
+            optDiv.className='quiz-option';
+            optDiv.dataset.correct = (opt === q.answer) ? "true" : "false";
+            const square = document.createElement('span');
+            square.className = 'square';
+            optDiv.appendChild(square);
+            optDiv.appendChild(document.createTextNode(opt));
 
-          shuffledOptions.forEach((opt,optIdx)=>{
-            const optionId = `q${idx+1}-${pIdx+1}-${qIdx}-${optIdx}`;
-            const input = document.createElement('input');
-            input.type='radio';
-            input.name=`lesson${idx+1}-part${pIdx+1}-q${qIdx}`;
-            input.id = optionId;
-            input.value = opt.isCorrect ? 'correct' : 'wrong';
-            const optionLabel = document.createElement('label');
-            optionLabel.setAttribute('for', optionId);
-            optionLabel.textContent = ` ${opt.text}`;
-            qDiv.appendChild(input);
-            qDiv.appendChild(optionLabel);
-            qDiv.appendChild(document.createElement('br'));
+            // Click handler for instant feedback
+            optDiv.addEventListener('click', ()=>{
+              if(optDiv.dataset.correct === "true"){
+                square.style.background = 'green';
+              } else {
+                square.style.background = 'red';
+              }
+              // Mark lesson complete if all correct answered
+              const allSquares = partDiv.querySelectorAll('.quiz-option span');
+              let allCorrect = true;
+              part.quiz.forEach((qCheck, i)=>{
+                const userSquare = partDiv.querySelectorAll('.quiz-option span')[i];
+                if(userSquare.style.background !== 'green') allCorrect = false;
+              });
+              if(allCorrect){
+                lessonsCompleted['lesson'+(idx+1)] = true;
+                renderProgress();
+                const nextLessonNum = idx+2;
+                if(nextLessonNum <= totalLessons) showLesson('lesson'+nextLessonNum);
+                // Unlock final quiz if all lessons complete
+                if(Object.keys(lessonsCompleted).length === totalLessons){
+                  const finalLink = document.getElementById('final-link');
+                  finalLink.classList.remove('disabled-link');
+                  finalLink.onclick = e => { e.preventDefault(); showLesson('final'); };
+                }
+              }
+            });
+
+            qDiv.appendChild(optDiv);
           });
 
-          form.appendChild(qDiv);
+          partDiv.appendChild(qDiv);
         });
-
-        const submitBtn = document.createElement('button');
-        submitBtn.type = 'submit';
-        submitBtn.className = 'p-2 bg-green-700 text-white rounded hover:bg-green-600';
-        submitBtn.textContent = 'Submit Quiz';
-
-        const feedback = document.createElement('p');
-        feedback.className='quiz-feedback text-gray-700';
-
-        form.appendChild(submitBtn);
-        form.appendChild(feedback);
-        quizDiv.appendChild(form);
-        partDiv.appendChild(quizDiv);
       }
 
       // Navigation buttons
@@ -186,16 +220,11 @@ function renderLessons(){
       lessonSection.appendChild(partDiv);
     });
 
-    const whyDiv = document.createElement('div');
-    whyDiv.className='bg-gray-100 p-4 rounded mt-4';
-    whyDiv.innerHTML = `<strong>Why this matters:</strong> ${lesson.why || 'Understanding this lesson helps you drive safely.'}`;
-    lessonSection.appendChild(whyDiv);
-
     container.appendChild(lessonSection);
   });
 }
 
-// Show lesson & reset first part
+// Show lesson and reset first part
 function showLesson(id){
   document.querySelectorAll('.lesson').forEach(s=>s.classList.remove('active'));
   document.querySelectorAll('.lesson-part').forEach(p=>p.classList.remove('active'));
@@ -206,7 +235,7 @@ function showLesson(id){
   if(firstPart) firstPart.classList.add('active');
 }
 
-// Navigation functions
+// Navigation helpers
 function nextPart(button){
   const parts = button.closest('.lesson').querySelectorAll('.lesson-part');
   for(let i=0;i<parts.length;i++){
@@ -232,56 +261,11 @@ function prevPart(button){
   }
 }
 
-// Quiz checking
-function checkQuiz(formId, lessonId, feedbackEl){
-  const form = document.getElementById(formId);
-  const answers = Array.from(form.querySelectorAll('input[name^="lesson"]'));
-  let correct = true;
-
-  const questions = [...new Set(answers.map(a=>a.name))];
-
-  questions.forEach(qName=>{
-    const radios = form[qName];
-    const radioArray = radios.length ? radios : [radios];
-    if(!radioArray.some(r=>r.checked && r.value==='correct')) correct=false;
-  });
-
-  if(correct){
-    feedbackEl.textContent = 'All answers correct! Lesson complete.';
-    feedbackEl.className='quiz-feedback text-green-600';
-    completeLesson(lessonId);
-  } else {
-    feedbackEl.textContent = 'Some answers are incorrect. Review the lesson and try again.';
-    feedbackEl.className='quiz-feedback text-red-600';
-  }
-}
-
-// Complete lesson
-function completeLesson(id){
-  lessonsCompleted[id]=true;
-  renderProgress();
-  if(Object.keys(lessonsCompleted).length===totalLessons){
-    const finalLink = document.getElementById('final-link');
-    finalLink.classList.remove('disabled-link');
-    finalLink.onclick = e => { e.preventDefault(); showLesson('final'); };
-  }
-  const nextLessonNum=parseInt(id.replace('lesson',''))+1;
-  if(nextLessonNum<=totalLessons) showLesson('lesson'+nextLessonNum);
-}
-
-// Event delegation for quiz submission
-document.getElementById('lessons-container').addEventListener('submit', function(e){
-  if(e.target.tagName.toLowerCase() === 'form'){
-    e.preventDefault();
-    const feedback = e.target.querySelector('.quiz-feedback');
-    const lessonId = e.target.closest('.lesson').id;
-    checkQuiz(e.target.id, lessonId, feedback);
-  }
-});
-
-// Initial link bindings
+// Initial render
+renderLessons();
+renderProgress();
 document.getElementById('lessons-link').onclick = e => { e.preventDefault(); showLesson('lesson1'); };
-document.getElementById('final-link').onclick = e => { e.preventDefault(); alert('Complete all lessons first, then come back to take the final quiz.'); };
+document.getElementById('final-link').onclick = e => { e.preventDefault(); alert('Complete all lessons first.'); };
 
 </script>
 </body>
