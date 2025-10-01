@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Idaho Driver's Education Classroom</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+body { background-color: #f9fafb; }
+header { background-color: #1e3a8a; color: white; }
+nav a { margin: 0 10px; text-decoration: none; font-weight: bold; }
+.lesson { display: none; }
+.lesson.active { display: block; }
+.lesson-part { display: none; }
+.lesson-part.active { display: block; }
+.disabled-link { cursor: not-allowed; opacity: 0.5; }
+.quiz-feedback { margin-top: 0.5rem; font-weight: bold; }
+</style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+<header class="p-4 text-center">
+  <h1 class="text-3xl font-bold">Idaho Driver's Education Classroom</h1>
+  <p class="mt-1">Interactive Lessons & Practice Test</p>
+</header>
+
+<nav class="bg-blue-800 p-3 text-center">
+  <a href="#" id="lessons-link" class="text-white">Lessons</a>
+  <a href="#" id="final-link" class="text-white disabled-link" onclick="quizLocked()">Final Quiz</a>
+</nav>
+
+<main class="flex-1 p-6 max-w-4xl mx-auto" id="lessons-container">
+  <p class="text-center text-gray-500">Loading lessons...</p>
+</main>
+
+<script>
+let lessonsData = [];
+let lessonsCompleted = {};
+let totalLessons = 0;
+
+// Load lessons JSON
+fetch('driving_lessons.json')
+.then(res => {
+  if (!res.ok) throw new Error('Failed to fetch JSON.');
+  return res.json();
+})
+.then(data => {
+  lessonsData = data.lessons;
+  totalLessons = lessonsData.length;
+  renderLessons();
+})
+.catch(err => {
+  document.getElementById('lessons-container').innerHTML =
+    "<p class='text-red-500'>Failed to load lessons. Please try again later.</p>";
+});
+
+function renderLessons(){
+  const container = document.getElementById('lessons-container');
+  container.innerHTML = '';
+  lessonsData.forEach((lesson, idx)=>{
+    const lessonSection = document.createElement('section');
+    lessonSection.id = 'lesson'+(idx+1);
+    lessonSection.className = 'lesson';
+    if(idx===0) lessonSection.classList.add('active');
+
+    const title = document.createElement('h2');
+    title.className='text-2xl font-bold mb-2';
+    title.textContent = `Lesson ${idx+1}: ${lesson.title}`;
+    lessonSection.appendChild(title);
+
+    lesson.parts.forEach((part,pIdx)=>{
+      const partDiv = document.createElement('div');
+      partDiv.className = 'lesson-part';
+      if(pIdx===0) partDiv.classList.add('active');
+
+      const partTitle = document.createElement('h3');
+      partTitle.className = 'font-semibold mb-1';
+      partTitle.textContent = `Part ${pIdx+1}: ${part.title}`;
+      partDiv.appendChild(partTitle);
+
+      const partContent = document.createElement('p');
+      partContent.textContent = part.content;
+      partDiv.appendChild(partContent);
+
+      if(part.scenario){
+        const scenario = document.createElement('p');
+        scenario.innerHTML = `<strong>Scenario:</strong> ${part.scenario}`;
+        partDiv.appendChild(scenario);
+      }
+
+      if(part.quiz){
+        const quizDiv = document.createElement('div');
+        quizDiv.innerHTML = `<p class="mt-2 font-bold">Mini Quiz</p>`;
+        const form = document.createElement('form');
+        form.id = `quiz${idx+1}-${pIdx+1}`;
+
+        part.quiz.forEach((q,qIdx)=>{
+          const qDiv = document.createElement('div');
+          qDiv.className='mb-2';
+          const label = document.createElement('p');
+          label.textContent = `${qIdx+1}. ${q.question}`;
+          qDiv.appendChild(label);
+
+          // Shuffle options
+          const shuffledOptions = q.options
+            .map(opt => ({ ...opt, sort: Math.random() }))
+            .sort((a,b)=> a.sort-b.sort);
+
+          shuffledOptions.forEach((opt,optIdx)=>{
+            const optionId = `q${idx+1}-${pIdx+1}-${qIdx}-${optIdx}`;
+            const input = document.createElement('input');
+            input.type='radio';
+            input.name=`q${qIdx}`;
+            input.id = optionId;
+            input.value=opt.correct?'correct':'wrong';
+            const optionLabel = document.createElement('label');
+            optionLabel.setAttribute('for', optionId);
+            optionLabel.textContent = ` ${opt.text}`;
+            qDiv.appendChild(input);
+            qDiv.appendChild(optionLabel);
+            qDiv.appendChild(document.createElement('br'));
+          });
+
+          form.appendChild(qDiv);
+        });
+
+        const submitBtn = document.createElement('button');
+        submitBtn.type='button';
+        submitBtn.className='p-2 bg-green-700 text-white rounded hover:bg-green-600';
+        submitBtn.textContent='Submit Quiz';
+        const feedback = document.createElement('p');
+        feedback.className='quiz-feedback text-gray-700';
+        submitBtn.onclick = ()=>checkQuiz(form.id, 'lesson'+(idx+1), feedback);
+        form.appendChild(submitBtn);
+        form.appendChild(feedback);
+
+        quizDiv.appendChild(form);
+        partDiv.appendChild(quizDiv);
+      }
+
+      // Navigation buttons
+      const navDiv = document.createElement('div');
+      navDiv.className='flex justify-between mt-4';
+      if(pIdx>0){
+        const prevBtn = document.createElement('button');
+        prevBtn.className='p-2 bg-gray-500 text-white rounded hover:bg-gray-400';
+        prevBtn.textContent='← Previous';
+        prevBtn.onclick=()=>prevPart(prevBtn);
+        navDiv.appendChild(prevBtn);
+      }
+      if(pIdx<lesson.parts.length-1){
+        const nextBtn = document.createElement('button');
+        nextBtn.className='p-2 bg-blue-700 text-white rounded hover:bg-blue-600';
+        nextBtn.textContent='Next →';
+        nextBtn.onclick=()=>nextPart(nextBtn);
+        navDiv.appendChild(nextBtn);
+      }
+      partDiv.appendChild(navDiv);
+
+      lessonSection.appendChild(partDiv);
+    });
+
+    const whyDiv = document.createElement('div');
+    whyDiv.className='bg-gray-100 p-4 rounded mt-4';
+    whyDiv.innerHTML = `<strong>Why this matters:</strong> ${lesson.why}`;
+    lessonSection.appendChild(whyDiv);
+
+    container.appendChild(lessonSection);
+  });
+}
+
+function showLesson(id){
+  const lessonEl = document.getElementById(id);
+  if(!lessonEl) return;
+  document.querySelectorAll('.lesson').forEach(s=>s.classList.remove('active'));
+  lessonEl.classList.add('active');
+}
+
+function nextPart(button){
+  const parts = button.closest('.lesson').querySelectorAll('.lesson-part');
+  for(let i=0;i<parts.length;i++){
+    if(parts[i].classList.contains('active')){
+      if(i<parts.length-1){
+        parts[i].classList.remove('active');
+        parts[i+1].classList.add('active');
+      }
+      break;
+    }
+  }
+}
+
+function prevPart(button){
+  const parts = button.closest('.lesson').querySelectorAll('.lesson-part');
+  for(let i=0;i<parts.length;i++){
+    if(parts[i].classList.contains('active')){
+      if(i>0){
+        parts[i].classList.remove('active');
+        parts[i-1].classList.add('active');
+      }
+      break;
+    }
+  }
+}
+
+function checkQuiz(formId, lessonId, feedbackEl){
+  const form = document.getElementById(formId);
+  const answers = Array.from(form.querySelectorAll('input[name^="q"]'));
+  let correct = true;
+
+  const questions = [...new Set(answers.map(a=>a.name))]; // unique question names
+
+  questions.forEach(qName=>{
+    const radios = form[qName];
+    const radioArray = radios.length ? radios : [radios];
+    if(!radioArray.some(r=>r.checked && r.value==='correct')) correct=false;
+  });
+
+  if(correct){
+    feedbackEl.textContent = 'All answers correct! Lesson complete.';
+    feedbackEl.className='quiz-feedback text-green-600';
+    completeLesson(lessonId);
+  } else {
+    feedbackEl.textContent = 'Some answers are incorrect. Review the lesson and try again.';
+    feedbackEl.className='quiz-feedback text-red-600';
+  }
+}
+
+function completeLesson(id){
+  lessonsCompleted[id]=true;
+  if(Object.keys(lessonsCompleted).length===totalLessons){
+    const finalLink = document.getElementById('final-link');
+    finalLink.classList.remove('disabled-link');
+    finalLink.onclick=()=>showLesson('final');
+  }
+  const nextLessonNum=parseInt(id.replace('lesson',''))+1;
+  if(nextLessonNum<=totalLessons) showLesson('lesson'+nextLessonNum);
+}
+
+function quizLocked(){ 
+  alert('Complete all lessons first, then come back to take the final quiz.'); 
+}
+
+document.getElementById('lessons-link').onclick=()=>showLesson('lesson1');
+</script>
+</body>
+</html>

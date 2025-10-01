@@ -1,0 +1,792 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "title": "Traffic Signs",
+      "parts": [
+        {"title": "Regulatory Signs", "content": "Regulatory signs dictate rules drivers must follow to prevent accidents.", "details": ["Stop, Yield, Speed Limit", "Why: Prevent collisions", "How: Stop signs halt vehicles; speed limits control safe speeds", "Logic: Following rules ensures predictable driving"], "scenario": "Ignoring a stop sign at a 4-way intersection can cause a collision.", "quiz":[{"question":"What shape is a stop sign?","type":"multiple-choice","options":["Octagon","Triangle","Diamond"],"answer":"Octagon"}]},
+        {"title": "Warning Signs", "content":"Alert drivers of hazards ahead.", "details":["Yellow diamond-shaped: curves, slippery roads", "Why: Gives advance notice of dangers", "Logic: Early warning reduces accidents"], "scenario":"Ignoring a 'Curve Ahead' sign may result in losing control.", "quiz":[{"question":"Why are warning signs usually yellow?","type":"multiple-choice","options":["To alert drivers to hazards","Because it is the most common color","To indicate directions"],"answer":"To alert drivers to hazards"}]},
+        {"title": "Guide Signs & Colors", "content":"Provide directions and information.", "details":["Green = directions, Blue = services, Brown = recreation", "Octagon = Stop, Triangle = Yield, Diamond = Warning", "Logic: Consistency reduces confusion"], "scenario":"A brown sign with a tent icon indicates a recreational area.", "quiz":[{"question":"What does a green sign indicate?","type":"multiple-choice","options":["Directions","Hazard","Services"],"answer":"Directions"}]},
+        {"title": "Traffic Scenarios", "content":"Practice reading signs in context.", "details":["Recognize signs quickly", "Respond appropriately"], "scenario":"Approaching a yield sign requires checking traffic.", "quiz":[{"question":"At a yield sign you should:","type":"multiple-choice","options":["Slow down or stop if needed","Speed up","Ignore"],"answer":"Slow down or stop if needed"}]},
+        {"title": "Mini Quiz", "content":"Review traffic signs.", "details":["Reinforces learning"], "scenario":"Understanding signs reduces accidents.", "quiz":[{"question":"What is the main purpose of regulatory signs?","type":"multiple-choice","options":["To enforce rules and ensure safety","To provide tourist information","To indicate weather conditions"],"answer":"To enforce rules and ensure safety"}]}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Rules of the Road",
+      "parts": [
+        {"title": "Speed Limits", "content":"Speed limits define safe driving speeds.", "details":["Urban:25–35 mph, Rural:55 mph, Interstate:65–75 mph", "Why: Maintain traffic flow","Logic: Exceeding limits increases crash risk"], "scenario":"Driving 80 mph in a 65 mph zone reduces reaction time.", "quiz":[{"question":"Why obey speed limits?","type":"multiple-choice","options":["Reduces accident risk","To avoid tickets"],"answer":"Reduces accident risk"}]},
+        {"title": "Right-of-Way", "content":"Rules for who goes first prevent collisions.", "details":["Yield to vehicles on your right","Always yield to pedestrians","Logic: Predictable yielding prevents crashes"], "scenario":"Failing to yield to the car on your right can cause a crash.", "quiz":[{"question":"Who has right-of-way if two vehicles arrive simultaneously?","type":"multiple-choice","options":["Vehicle on the right","Vehicle on the left"],"answer":"Vehicle on the right"}]},
+        {"title": "Passing Rules", "content":"Protect drivers on two-lane roads.", "details":["Pass on left only","Never pass on hills, curves, intersections","Logic: Avoid zones where visibility is limited"], "scenario":"Attempting to pass on a curve can cause a head-on collision.", "quiz":[{"question":"Where is it unsafe to pass another vehicle?","type":"multiple-choice","options":["Hills or curves","Straight road","Interstate"],"answer":"Hills or curves"}]},
+        {"title": "Traffic Scenarios", "content":"Apply rules in context.", "details":["Check surroundings before passing","Yield appropriately"], "scenario":"Failing to yield when merging causes collisions.", "quiz":[{"question":"At a merge lane, you should:","type":"multiple-choice","options":["Yield to existing traffic","Speed up","Ignore merging rules"],"answer":"Yield to existing traffic"}]},
+        {"title": "Mini Quiz", "content":"Test rules knowledge.", "details":["Scenario-based practice"], "scenario":"Understanding rules prevents collisions.", "quiz":[{"question":"Why are passing rules important?","type":"multiple-choice","options":["To avoid collisions on limited visibility roads","To finish trips faster"],"answer":"To avoid collisions on limited visibility roads"}]}
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Safe Driving Practices",
+      "parts": [
+        {"title":"Seat Belts & Following Distance","content":"Seat belts protect in crashes.", "details":["Seat belts required for all passengers","3-second following rule","Logic: Provides reaction time"], "scenario":"Tailgating reduces reaction time.", "quiz":[{"question":"What is the purpose of the 3-second rule?","type":"multiple-choice","options":["Maintain safe following distance","Keep traffic moving fast"],"answer":"Maintain safe following distance"}]},
+        {"title":"Turn Signals & DUI","content":"Signaling communicates intentions.", "details":["Signal at least 100 ft before turning","DUI limit:0.08% adults,0% under 21","Logic: Prevents misunderstandings"], "scenario":"Not signaling can cause sudden braking.", "quiz":[{"question":"What is the adult DUI limit in Idaho?","type":"multiple-choice","options":["0.08% BAC","0.10% BAC"],"answer":"0.08% BAC"}]},
+        {"title":"Defensive Driving","content":"Anticipate hazards and stay alert.", "details":["Scan road ahead","Adjust speed and lane position","Logic: Prevents accidents"], "scenario":"Failing to check intersections can lead to collisions.", "quiz":[{"question":"Defensive driving helps prevent:","type":"multiple-choice","options":["Accidents","Fuel usage"],"answer":"Accidents"}]},
+        {"title":"Distraction & Fatigue","content":"Avoid distractions and drowsy driving.", "details":["No texting","Take breaks on long trips","Logic: Focused driving reduces accidents"], "scenario":"Texting while driving increases crash risk.", "quiz":[{"question":"Why avoid distractions?","type":"multiple-choice","options":["Reduce crash risk","Save time"],"answer":"Reduce crash risk"}]},
+        {"title":"Mini Quiz","content":"Review safe driving practices.", "details":["Scenario-based review"], "scenario":"Following safe practices prevents collisions.", "quiz":[{"question":"Why wear a seat belt?","type":"multiple-choice","options":["Protect occupants in a crash","Comfort only"],"answer":"Protect occupants in a crash"}]}
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Special Situations",
+      "parts": [
+        {"title":"School Buses & Emergency Vehicles","content":"Stop for buses and yield to emergency vehicles.", "details":["Stop for school buses with red lights","Pull over for emergency vehicles","Logic: Priority to emergencies"], "scenario":"Ignoring a bus endangers children.", "quiz":[{"question":"What to do for a school bus with red lights?","type":"multiple-choice","options":["Stop until lights off","Pass quickly"],"answer":"Stop until lights off"}]},
+        {"title":"Railroad Crossings & Construction Zones","content":"Follow instructions and slow down.", "details":["Stop at crossings with gates down","Fines double in construction zones","Logic: Protects workers and prevents collisions"], "scenario":"Speeding in a construction zone increases risk.", "quiz":[{"question":"Why slow down in construction zones?","type":"multiple-choice","options":["Protect workers","Avoid fines only"],"answer":"Protect workers"}]},
+        {"title":"Adverse Weather","content":"Adapt driving to conditions.", "details":["Reduce speed in rain/fog","Use low beams in fog","Logic: Maintain control"], "scenario":"High beams in fog reduce visibility.", "quiz":[{"question":"What lights to use in fog?","type":"multiple-choice","options":["Low beams","High beams"],"answer":"Low beams"}]},
+        {"title":"Night Driving","content":"Extra caution in low light.", "details":["Reduce speed","Watch for pedestrians and animals","Logic: Visibility is limited"], "scenario":"Driving too fast at night can miss hazards.", "quiz":[{"question":"Why slow down at night?","type":"multiple-choice","options":["Limited visibility","Traffic flow"],"answer":"Limited visibility"}]},
+        {"title":"Mini Quiz","content":"Test special situations.", "details":["Scenario review"], "scenario":"Attention to special situations saves lives.", "quiz":[{"question":"Why yield to emergency vehicles?","type":"multiple-choice","options":["They have priority","No reason"],"answer":"They have priority"}]}
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Sharing the Road",
+      "parts": [
+        {"title":"Bicycles & Motorcycles","content":"Extra caution needed for smaller vehicles.", "details":["Allow at least 3 feet when passing","Check blind spots","Logic: Less visible but vulnerable"], "scenario":"Opening a door without looking can hit a cyclist.", "quiz":[{"question":"How much space when passing a bicycle?","type":"multiple-choice","options":["At least 3 feet","1 foot"],"answer":"At least 3 feet"}]},
+        {"title":"Pedestrians","content":"Pedestrians always have right-of-way.", "details":["Stop at crosswalks","Be extra cautious near schools","Logic: Most vulnerable road users"], "scenario":"A pedestrian crossing at night may be hard to see.", "quiz":[{"question":"Who has right-of-way at crosswalks?","type":"multiple-choice","options":["Pedestrians","Vehicles"],"answer":"Pedestrians"}]},
+        {"title":"Sharing Lanes with Trucks","content":"Understand truck limitations.", "details":["Stay out of blind spots","Avoid sudden lane changes","Logic: Trucks have longer stopping distance"], "scenario":"Cutting in front of a truck can cause accidents.", "quiz":[{"question":"Why avoid truck blind spots?","type":"multiple-choice","options":["Limited visibility","Faster acceleration"],"answer":"Limited visibility"}]},
+        {"title":"Roundabouts & Multi-Lane Roads","content":"Yield and choose lanes correctly.", "details":["Yield on entry","Signal lane changes","Logic: Smooth traffic flow prevents collisions"], "scenario":"Entering a roundabout without yielding can cause crashes.", "quiz":[{"question":"At roundabouts, you should:","type":"multiple-choice","options":["Yield to traffic","Speed up"],"answer":"Yield to traffic"}]},
+        {"title":"Mini Quiz","content":"Review sharing the road.", "details":["Scenario review"], "scenario":"Sharing roads prevents accidents.", "quiz":[{"question":"Why check blind spots for motorcycles?","type":"multiple-choice","options":["They’re smaller and harder to see","Always speed"],"answer":"They’re smaller and harder to see"}]}
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Adverse Conditions",
+      "parts": [
+        {"title":"Rain & Hydroplaning","content":"Reduce speed and increase following distance.", "details":["Ease off gas if hydroplaning","Do not brake hard","Logic: Water reduces control"], "scenario":"Driving too fast on wet pavement can cause hydroplaning.", "quiz":[{"question":"What should you do if hydroplaning?","type":"multiple-choice","options":["Ease off gas","Brake hard"],"answer":"Ease off gas"}]},
+        {"title":"Fog & Night Driving","content":"Reduce speed and increase caution.", "details":["Use low beams in fog","Logic: High beams blind you"], "scenario":"High beams in fog reduce visibility.", "quiz":[{"question":"What lights to use in fog?","type":"multiple-choice","options":["Low beams","High beams"],"answer":"Low beams"}]},
+        {"title":"Snow & Ice","content":"Drive slowly and increase stopping distance.", "details":["Use chains if needed","Avoid sudden braking","Logic: Traction is limited"], "scenario":"Slippery roads can cause skids.", "quiz":[{"question":"How to drive on ice?","type":"multiple-choice","options":["Slowly and avoid sudden braking","Normal speed"],"answer":"Slowly and avoid sudden braking"}]},
+        {"title":"Wind & Debris","content":"Hold steering steady.", "details":["Anticipate gusts","Avoid debris","Logic: Sudden wind can shift vehicles"], "scenario":"High wind can push vehicles into other lanes.", "quiz":[{"question":"Why keep both hands on the wheel in strong wind?","type":"multiple-choice","options":["Maintain control","Prevent tire wear"],"answer":"Maintain control"}]},
+        {"title":"Mini Quiz","content":"Review adverse conditions.", "details":["Scenario review"], "scenario":"Adjusting for conditions prevents accidents.", "quiz":[{"question":"Why reduce speed in rain?","type":"multiple-choice","options":["Roads are slippery","To avoid tickets"],"answer":"Roads are slippery"}]}
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Vehicle Basics",
+      "parts": [
+        {"title":"Pre-Trip Inspection","content":"Check vehicle before driving.", "details":["Check tires, brakes, lights, fluids","Logic: Prevents mechanical failure"], "scenario":"A worn-out tire can blow out.", "quiz":[{"question":"What should you check before driving?","type":"multiple-choice","options":["Tires, brakes, lights, fluids","Only gas level"],"answer":"Tires, brakes, lights, fluids"}]},
+        {"title":"Dashboard & Maintenance","content":"Understand warning lights.", "details":["Check oil, coolant, tire pressure","Logic: Prevents major failures"], "scenario":"Ignoring oil light can damage engine.", "quiz":[{"question":"Ignoring dashboard warnings risks:","type":"multiple-choice","options":["Major vehicle failure","Nothing important"],"answer":"Major vehicle failure"}]},
+        {"title":"Vehicle Controls","content":"Learn controls and their use.", "details":["Steering, pedals, indicators","Logic: Proper use ensures safe driving"], "scenario":"Incorrect use of pedals can cause accidents.", "quiz":[{"question":"What is important about vehicle controls?","type":"multiple-choice","options":["Know how to operate them","Ignore them"],"answer":"Know how to operate them"}]},
+        {"title":"Emergency Equipment","content":"Know how to use safety gear.", "details":["Fire extinguisher, first aid kit","Logic: Preparedness saves lives"], "scenario":"Not having safety equipment can worsen accidents.", "quiz":[{"question":"Why keep emergency equipment in vehicle?","type":"multiple-choice","options":["Prepared for emergencies","For decoration"],"answer":"Prepared for emergencies"}]},
+        {"title":"Mini Quiz","content":"Review vehicle basics.", "details":["Scenario review"], "scenario":"Vehicle maintenance prevents accidents.", "quiz":[{"question":"Why check tire pressure?","type":"multiple-choice","options":["Prevent blowouts","Fuel economy"],"answer":"Prevent blowouts"}]}
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Intersections & Turns",
+      "parts": [
+        {"title":"Four-Way Stops","content":"Follow right-of-way rules.", "details":["Yield to right","Check all directions","Logic: Predictable flow"], "scenario":"Failing to yield causes collisions.", "quiz":[{"question":"Who goes first at a 4-way stop?","type":"multiple-choice","options":["Vehicle on right","Vehicle on left"],"answer":"Vehicle on right"}]},
+        {"title":"Left & Right Turns","content":"Use signals and lane position.", "details":["Signal properly","Check mirrors","Logic: Avoid collisions"], "scenario":"Turning without signaling can cause accidents.", "quiz":[{"question":"Why signal before a turn?","type":"multiple-choice","options":["Communicate intent","No reason"],"answer":"Communicate intent"}]},
+        {"title":"Roundabouts","content":"Yield and choose lanes properly.", "details":["Yield to traffic","Signal lane changes","Logic: Smooth traffic flow"], "scenario":"Entering without yielding can cause crashes.", "quiz":[{"question":"Yield at roundabouts?","type":"multiple-choice","options":["Yes","No"],"answer":"Yes"}]},
+        {"title":"U-Turns","content":"Legal and safe locations only.", "details":["Check signs","Clear visibility","Logic: Prevents accidents"], "scenario":"Making U-turn on a curve can cause collisions.", "quiz":[{"question":"Where are U-turns allowed?","type":"multiple-choice","options":["Legal locations only","Anywhere"],"answer":"Legal locations only"}]},
+        {"title":"Mini Quiz","content":"Review intersections.", "details":["Scenario review"], "scenario":"Safe turns prevent collisions.", "quiz":[{"question":"Why follow right-of-way at intersections?","type":"multiple-choice","options":["Prevent collisions","Save time"],"answer":"Prevent collisions"}]}
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Parking Rules",
+      "parts": [
+        {"title":"Parallel Parking","content":"Position car safely along curb.", "details":["Check mirrors","Signal","Logic: Avoid accidents"], "scenario":"Failing to check blind spots can cause collisions.", "quiz":[{"question":"When parallel parking, check:","type":"multiple-choice","options":["Mirrors and blind spots","Only front"],"answer":"Mirrors and blind spots"}]},
+        {"title":"Angle & Perpendicular Parking","content":"Position in designated spots.", "details":["Enter slowly","Adjust angle","Logic: Avoid collisions"], "scenario":"Misaligned entry can hit other vehicles.", "quiz":[{"question":"Why align properly in angled spots?","type":"multiple-choice","options":["Prevent hitting vehicles","Save time"],"answer":"Prevent hitting vehicles"}]},
+        {"title":"Parking on Hills","content":"Use parking brake and wheel direction.", "details":["Turn wheels toward curb downhill","Away from curb uphill","Logic: Prevent rolling"], "scenario":"Incorrect wheel turn can let car roll.", "quiz":[{"question":"Which way to turn wheels uphill?","type":"multiple-choice","options":["Away from curb","Toward curb"],"answer":"Away from curb"}]},
+        {"title":"No Parking Zones","content":"Obey signs to avoid fines.", "details":["Fire hydrants, crosswalks, driveways","Logic: Safety and access"], "scenario":"Parking too close to hydrant blocks emergency access.", "quiz":[{"question":"Why not park near fire hydrant?","type":"multiple-choice","options":["Block emergency access","No reason"],"answer":"Block emergency access"}]},
+        {"title":"Mini Quiz","content":"Review parking rules.", "details":["Scenario review"], "scenario":"Proper parking prevents accidents.", "quiz":[{"question":"Why use parking brake on hills?","type":"multiple-choice","options":["Prevent rolling","For fun"],"answer":"Prevent rolling"}]}
+      ]
+    },
+      {
+  "lessons": [
+    {
+      "id": 21,
+      "title": "Winter Driving",
+      "parts": [
+        {"title":"Snow & Ice","content":"Reduce speed and increase following distance.", "details":["Slippery roads","Logic: Prevent skidding"], "scenario":"Sudden braking on ice can cause collisions.", "quiz":[{"question":"Why slow down on ice?","type":"multiple-choice","options":["Prevent skidding","No reason"],"answer":"Prevent skidding"}]},
+        {"title":"Braking on Ice","content":"Use gentle braking or anti-lock brakes.", "details":["Avoid sudden stops","Logic: Maintain control"], "scenario":"Slamming brakes on ice causes spin.", "quiz":[{"question":"Best braking on ice?","type":"multiple-choice","options":["Gentle braking","Hard braking"],"answer":"Gentle braking"}]},
+        {"title":"Visibility & Lights","content":"Clear snow and ice from all windows.", "details":["Use headlights","Logic: See and be seen"], "scenario":"Obstructed windshield reduces reaction time.", "quiz":[{"question":"Why clear snow from windows?","type":"multiple-choice","options":["Improve visibility","Nothing"],"answer":"Improve visibility"}]},
+        {"title":"Tire Chains & Equipment","content":"Use chains if required.", "details":["Check tire pressure","Carry shovel and sand","Logic: Safety on snowy roads"], "scenario":"Driving without chains on required roads can cause accidents.", "quiz":[{"question":"When use tire chains?","type":"multiple-choice","options":["Required snowy roads","All roads"],"answer":"Required snowy roads"}]},
+        {"title":"Mini Quiz","content":"Review winter driving.", "details":["Scenario review"], "scenario":"Safe winter driving prevents crashes.", "quiz":[{"question":"Why carry shovel and sand in winter?","type":"multiple-choice","options":["Help if stuck","Decoration"],"answer":"Help if stuck"}]}
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Driving in Rain",
+      "parts": [
+        {"title":"Hydroplaning","content":"Slow down to avoid losing traction.", "details":["Do not brake hard","Logic: Maintain control"], "scenario":"High speed in rain can lift tires off road.", "quiz":[{"question":"Hydroplaning prevention?","type":"multiple-choice","options":["Reduce speed","Accelerate"],"answer":"Reduce speed"}]},
+        {"title":"Windshield & Wipers","content":"Ensure visibility is clear.", "details":["Replace worn wipers","Logic: See hazards"], "scenario":"Dirty windshield reduces reaction time.", "quiz":[{"question":"Why maintain wipers?","type":"multiple-choice","options":["Clear visibility","Decoration"],"answer":"Clear visibility"}]},
+        {"title":"Following Distance","content":"Increase distance in rain.", "details":["More stopping distance","Logic: Safety margin"], "scenario":"Tailgating in rain increases crash risk.", "quiz":[{"question":"Following distance in rain?","type":"multiple-choice","options":["Increase","Same"],"answer":"Increase"}]},
+        {"title":"Braking Techniques","content":"Use gentle braking, avoid sudden movements.", "details":["Prevent skidding","Logic: Control vehicle"], "scenario":"Hard braking causes vehicle to skid.", "quiz":[{"question":"How to brake in heavy rain?","type":"multiple-choice","options":["Gently","Hard"],"answer":"Gently"}]},
+        {"title":"Mini Quiz","content":"Review rain driving.", "details":["Scenario review"], "scenario":"Safe rain driving prevents accidents.", "quiz":[{"question":"Why avoid tailgating in rain?","type":"multiple-choice","options":["More stopping distance","Nothing"],"answer":"More stopping distance"}]}
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Driving in Fog",
+      "parts": [
+        {"title":"Visibility","content":"Reduce speed and use low beams.", "details":["Avoid high beams","Logic: High beams reflect fog"], "scenario":"High beams blind you in fog.", "quiz":[{"question":"Best lights in fog?","type":"multiple-choice","options":["Low beams","High beams"],"answer":"Low beams"}]},
+        {"title":"Fog Signals","content":"Use fog lights if equipped.", "details":["Enhances visibility","Logic: Be seen by others"], "scenario":"Not using fog lights reduces your visibility.", "quiz":[{"question":"Fog lights help:","type":"multiple-choice","options":["See and be seen","Nothing"],"answer":"See and be seen"}]},
+        {"title":"Lane Discipline","content":"Follow lane markings closely.", "details":["Do not swerve","Logic: Maintain safe path"], "scenario":"Drifting in fog causes accidents.", "quiz":[{"question":"Lane markings in fog:","type":"multiple-choice","options":["Guide path","Optional"],"answer":"Guide path"}]},
+        {"title":"Avoid Stopping on Road","content":"If needed, pull over safely.", "details":["Turn on hazards","Logic: Reduce risk"], "scenario":"Stopping in lane causes collisions.", "quiz":[{"question":"If stopping in fog, you should:","type":"multiple-choice","options":["Pull over and use hazards","Stop in lane"],"answer":"Pull over and use hazards"}]},
+        {"title":"Mini Quiz","content":"Review fog driving.", "details":["Scenario review"], "scenario":"Proper fog driving prevents accidents.", "quiz":[{"question":"Why reduce speed in fog?","type":"multiple-choice","options":["Limited visibility","Traffic flow"],"answer":"Limited visibility"}]}
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Driving in Wind",
+      "parts": [
+        {"title":"Crosswinds","content":"Hold steering firmly.", "details":["Adjust lane position","Logic: Prevent vehicle from drifting"], "scenario":"Strong gusts can push vehicle off road.", "quiz":[{"question":"Crosswind handling?","type":"multiple-choice","options":["Hold steering","Relax steering"],"answer":"Hold steering"}]},
+        {"title":"High-Profile Vehicles","content":"Extra caution for trucks and buses.", "details":["They are more affected by wind","Logic: Avoid sideswipes"], "scenario":"Passing a truck in wind requires extra space.", "quiz":[{"question":"Wind affects trucks how?","type":"multiple-choice","options":["More than cars","Less than cars"],"answer":"More than cars"}]},
+        {"title":"Bridges & Open Areas","content":"Reduce speed and grip wheel tightly.", "details":["Gusts are stronger","Logic: Control vehicle"], "scenario":"Crossing bridge in wind can be dangerous.", "quiz":[{"question":"Why slow on bridges in wind?","type":"multiple-choice","options":["Gusts stronger","Traffic"],"answer":"Gusts stronger"}]},
+        {"title":"Debris & Hazards","content":"Watch for objects blown onto road.", "details":["Logic: Avoid accidents"], "scenario":"Branches on road can cause crashes.", "quiz":[{"question":"Why watch for debris in wind?","type":"multiple-choice","options":["Avoid collisions","Nothing"],"answer":"Avoid collisions"}]},
+        {"title":"Mini Quiz","content":"Review wind driving.", "details":["Scenario review"], "scenario":"Proper wind driving prevents accidents.", "quiz":[{"question":"Why grip wheel tightly in strong wind?","type":"multiple-choice","options":["Prevent vehicle drift","Relax"],"answer":"Prevent vehicle drift"}]}
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Driving on Hills",
+      "parts": [
+        {"title":"Uphill Driving","content":"Maintain speed and gear.", "details":["Avoid rolling backward","Logic: Smooth ascent"], "scenario":"Stopping mid-hill can be dangerous.", "quiz":[{"question":"Uphill stop:","type":"multiple-choice","options":["Use brake and clutch properly","No technique needed"],"answer":"Use brake and clutch properly"}]},
+        {"title":"Downhill Driving","content":"Use lower gear to control speed.", "details":["Avoid excessive braking","Logic: Prevent brake fade"], "scenario":"Riding brakes downhill can overheat them.", "quiz":[{"question":"Downhill control?","type":"multiple-choice","options":["Use lower gear","Brake constantly"],"answer":"Use lower gear"}]},
+        {"title":"Passing on Hills","content":"Ensure full visibility and clearance.", "details":["Logic: Avoid blind spots"], "scenario":"Passing without seeing road ahead is dangerous.", "quiz":[{"question":"Passing on hill requires:","type":"multiple-choice","options":["Clear visibility","Just guess"],"answer":"Clear visibility"}]},
+        {"title":"Stopping on Hills","content":"Use parking brake if needed.", "details":["Logic: Prevent rollback"], "scenario":"Stopping on hill without brake can roll car backward.", "quiz":[{"question":"How to prevent rollback on hill?","type":"multiple-choice","options":["Use parking brake","Do nothing"],"answer":"Use parking brake"}]},
+        {"title":"Mini Quiz","content":"Review hill driving.", "details":["Scenario review"], "scenario":"Proper hill driving prevents accidents.", "quiz":[{"question":"Why use lower gear downhill?","type":"multiple-choice","options":["Control speed","Nothing"],"answer":"Control speed"}]}
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Roundabouts",
+      "parts": [
+        {"title":"Entering Roundabout","content":"Yield to traffic inside.", "details":["Check all lanes","Logic: Avoid collisions"], "scenario":"Entering without yielding can cause accidents.", "quiz":[{"question":"Yield in roundabout?","type":"multiple-choice","options":["Yes","No"],"answer":"Yes"}]},
+        {"title":"Lane Choice","content":"Choose lane based on exit.", "details":["Logic: Avoid lane changes inside roundabout"], "scenario":"Wrong lane causes exit confusion.", "quiz":[{"question":"Choose lane before entering roundabout?","type":"multiple-choice","options":["Yes","No"],"answer":"Yes"}]},
+        {"title":"Signaling","content":"Signal exit lane.", "details":["Logic: Communicate intentions"], "scenario":"Not signaling confuses other drivers.", "quiz":[{"question":"When to signal in roundabout?","type":"multiple-choice","options":["Exiting","Entering"],"answer":"Exiting"}]},
+        {"title":"Pedestrians & Cyclists","content":"Yield as needed.", "details":["Logic: Safety"], "scenario":"Not yielding can cause injury.", "quiz":[{"question":"Yield to pedestrians in roundabout?","type":"multiple-choice","options":["Yes","No"],"answer":"Yes"}]},
+        {"title":"Mini Quiz","content":"Review roundabouts.", "details":["Scenario review"], "scenario":"Proper use prevents collisions.", "quiz":[{"question":"Why choose lane before roundabout?","type":"multiple-choice","options":["Avoid lane changes inside","No reason"],"answer":"Avoid lane changes inside"}]}
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Parking",
+      "parts": [
+        {"title":"Parallel Parking","content":"Check mirrors and blind spots.", "details":["Use proper technique","Logic: Avoid hitting vehicles"], "scenario":"Improper parallel parking causes collisions.", "quiz":[{"question":"Parallel parking requires:","type":"multiple-choice","options":["Mirrors and technique","Just guess"],"answer":"Mirrors and technique"}]},
+        {"title":"Angle & Perpendicular Parking","content":"Center vehicle in space.", "details":["Avoid hitting adjacent cars","Logic: Maximize space"], "scenario":"Poor alignment can block traffic.", "quiz":[{"question":"Angle parking tip?","type":"multiple-choice","options":["Center vehicle","Park anywhere"],"answer":"Center vehicle"}]},
+        {"title":"Parking on Hills","content":"Use wheel direction and parking brake.", "details":["Logic: Prevent rollback"], "scenario":"Wheels not turned can roll into traffic.", "quiz":[{"question":"Parking on hill:","type":"multiple-choice","options":["Turn wheels and brake","No need"],"answer":"Turn wheels and brake"}]},
+        {"title":"No-Parking Zones","content":"Observe signs and curb markings.", "details":["Logic: Avoid fines"], "scenario":"Parking in prohibited area can cause ticket.", "quiz":[{"question":"No-parking zone reason?","type":"multiple-choice","options":["Safety and access","Nothing"],"answer":"Safety and access"}]},
+        {"title":"Mini Quiz","content":"Review parking.", "details":["Scenario review"], "scenario":"Proper parking prevents collisions.", "quiz":[{"question":"Why use parking brake on hill?","type":"multiple-choice","options":["Prevent rollback","Nothing"],"answer":"Prevent rollback"}]}
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Vehicle Maintenance",
+      "parts": [
+        {"title":"Tires","content":"Check pressure and tread.", "details":["Logic: Prevent blowouts"], "scenario":"Low tire pressure increases crash risk.", "quiz":[{"question":"Check tires because:","type":"multiple-choice","options":["Prevent blowouts","Nothing"],"answer":"Prevent blowouts"}]},
+        {"title":"Lights & Signals","content":"Ensure all working.", "details":["Logic: Communicate with drivers"], "scenario":"Broken brake light can cause rear-end collision.", "quiz":[{"question":"Why maintain lights?","type":"multiple-choice","options":["Safety","Nothing"],"answer":"Safety"}]},
+        {"title":"Fluids","content":"Check oil, brake, coolant.", "details":["Logic: Prevent mechanical failure"], "scenario":"Low brake fluid can cause brake failure.", "quiz":[{"question":"Check fluids to:","type":"multiple-choice","options":["Prevent failure","Save money"],"answer":"Prevent failure"}]},
+        {"title":"Brakes","content":"Ensure proper operation.", "details":["Logic: Safe stopping"], "scenario":"Faulty brakes increase crash risk.", "quiz":[{"question":"Brake check reason?","type":"multiple-choice","options":["Safe stopping","Nothing"],"answer":"Safe stopping"}]},
+        {"title":"Mini Quiz","content":"Review maintenance.", "details":["Scenario review"], "scenario":"Maintained vehicle is safer.", "quiz":[{"question":"Why maintain vehicle?","type":"multiple-choice","options":["Safety","Nothing"],"answer":"Safety"}]}
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Defensive Driving",
+      "parts": [
+        {"title":"Anticipate Hazards","content":"Watch for erratic drivers.", "details":["Plan escape route","Logic: Avoid collisions"], "scenario":"Predicting another driver’s actions prevents accidents.", "quiz":[{"question":"Defensive driving tip?","type":"multiple-choice","options":["Anticipate hazards","Drive fast"],"answer":"Anticipate hazards"}]},
+        {"title":"Keep Distance","content":"Maintain safe following distance.", "details":["Logic: Time to react"], "scenario":"Tailgating reduces reaction time.", "quiz":[{"question":"Safe following distance reason?","type":"multiple-choice","options":["Time to react","Save fuel"],"answer":"Time to react"}]},
+        {"title":"Avoid Blind Spots","content":"Check mirrors and over shoulder.", "details":["Logic: See all around"], "scenario":"Changing lanes without checking blind spots causes collisions.", "quiz":[{"question":"Blind spot check reason?","type":"multiple-choice","options":["Prevent collisions","Nothing"],"answer":"Prevent collisions"}]},
+        {"title":"Predict Intersections","content":"Look ahead and anticipate stops.", "details":["Logic: Reduce surprises"], "scenario":"Sudden stop causes rear-end crash.", "quiz":[{"question":"Intersection prediction helps?","type":"multiple-choice","options":["Reduce surprises","Nothing"],"answer":"Reduce surprises"}]},
+        {"title":"Mini Quiz","content":"Review defensive driving.", "details":["Scenario review"], "scenario":"Defensive driving prevents accidents.", "quiz":[{"question":"Why drive defensively?","type":"multiple-choice","options":["Avoid accidents","Save time"],"answer":"Avoid accidents"}]}
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Eco-Driving",
+      "parts": [
+        {"title":"Smooth Acceleration","content":"Avoid rapid starts.", "details":["Saves fuel","Logic: Reduces emissions"], "scenario":"Hard acceleration wastes fuel.", "quiz":[{"question":"Why accelerate smoothly?","type":"multiple-choice","options":["Save fuel","Faster"],"answer":"Save fuel"}]},
+        {"title":"Maintain Steady Speed","content":"Use cruise control if safe.", "details":["Logic: Reduce fuel consumption"], "scenario":"Speed fluctuations increase fuel use.", "quiz":[{"question":"Steady speed benefits?","type":"multiple-choice","options":["Fuel efficiency","None"],"answer":"Fuel efficiency"}]},
+        {"title":"Reduce Idling","content":"Turn off engine when parked.", "details":["Logic: Prevent pollution and fuel waste"], "scenario":"Idling for long time wastes fuel.", "quiz":[{"question":"Why reduce idling?","type":"multiple-choice","options":["Save fuel","Nothing"],"answer":"Save fuel"}]},
+        {"title":"Proper Tire Inflation","content":"Keep tires at correct pressure.", "details":["Logic: Better fuel economy"], "scenario":"Under-inflated tires increase consumption.", "quiz":[{"question":"Why keep tire pressure correct?","type":"multiple-choice","options":["Fuel efficiency","Nothing"],"answer":"Fuel efficiency"}]},
+        {"title":"Mini Quiz","content":"Review eco-driving.", "details":["Scenario review"], "scenario":"Eco-driving saves money and environment.", "quiz":[{"question":"Why practice eco-driving?","type":"multiple-choice","options":["Save fuel and reduce emissions","Faster"],"answer":"Save fuel and reduce emissions"}]}
+      ]
+    }
+  ]
+}
+
+    {
+      "id": 10,
+      "title": "Defensive Driving",
+      "parts": [
+        {"title":"Anticipate Hazards","content":"Look ahead for potential risks.", "details":["Scan intersections","Check blind spots","Logic: Early awareness prevents crashes"], "scenario":"Failing to scan intersection causes collisions.", "quiz":[{"question":"Why anticipate hazards?","type":"multiple-choice","options":["Prevent accidents","Save time"],"answer":"Prevent accidents"}]},
+        {"title":"Avoid Aggressive Driving","content":"Stay calm and patient.", "details":["No tailgating","No cutting off","Logic: Reduces crashes"], "scenario":"Aggressive driving can cause road rage accidents.", "quiz":[{"question":"Tailgating is:","type":"multiple-choice","options":["Aggressive","Safe"],"answer":"Aggressive"}]},
+        {"title":"Safe Lane Changes","content":"Check mirrors and blind spots.", "details":["Signal","Adjust speed","Logic: Avoid collisions"], "scenario":"Changing lanes without checking can hit another car.", "quiz":[{"question":"Before changing lanes, you must:","type":"multiple-choice","options":["Check mirrors and blind spots","Just signal"],"answer":"Check mirrors and blind spots"}]},
+        {"title":"Avoid Distractions","content":"Focus on driving.", "details":["No phone use","Limit passengers","Logic: Keeps attention on road"], "scenario":"Texting while driving can cause accidents.", "quiz":[{"question":"Why avoid distractions?","type":"multiple-choice","options":["Prevent crashes","Save time"],"answer":"Prevent crashes"}]},
+        {"title":"Mini Quiz","content":"Review defensive driving.", "details":["Scenario review"], "scenario":"Defensive driving saves lives.", "quiz":[{"question":"Defensive driving helps prevent:","type":"multiple-choice","options":["Accidents","Traffic fines"],"answer":"Accidents"}]}
+      ]
+    }
+    {
+      "id": 11,
+      "title": "Alcohol & Driving",
+      "parts": [
+        {"title":"Effects of Alcohol","content":"Alcohol slows reaction time and judgment.", "details":["Reduces coordination","Impairs decision-making","Logic: Increases accident risk"], "scenario":"Driving after drinking can cause fatal crashes.", "quiz":[{"question":"Alcohol affects:","type":"multiple-choice","options":["Reaction time and judgment","Only mood"],"answer":"Reaction time and judgment"}]},
+        {"title":"Blood Alcohol Limits","content":"Know legal limits.", "details":["Adults: 0.08% BAC","Under 21: 0%","Logic: Legal enforcement prevents impaired driving"], "scenario":"Driving over the limit risks arrest and crashes.", "quiz":[{"question":"Legal adult BAC limit in Idaho?","type":"multiple-choice","options":["0.08%","0.10%"],"answer":"0.08%"}]},
+        {"title":"Impaired Driving Consequences","content":"Legal and safety risks.", "details":["Fines, jail, license suspension","High accident risk","Logic: Deterrent for public safety"], "scenario":"Drunk driving can lead to injury or death.", "quiz":[{"question":"Consequence of DUI?","type":"multiple-choice","options":["Fines and possible jail","Nothing serious"],"answer":"Fines and possible jail"}]},
+        {"title":"Alternatives to Driving Impaired","content":"Plan ahead to avoid risks.", "details":["Designated driver","Ride services","Logic: Eliminates impaired driving accidents"], "scenario":"Using a ride service prevents DUI crashes.", "quiz":[{"question":"Safer alternative to driving after drinking?","type":"multiple-choice","options":["Use designated driver","Drive slowly"],"answer":"Use designated driver"}]},
+        {"title":"Mini Quiz","content":"Review alcohol effects.", "details":["Scenario review"], "scenario":"Avoid drinking and driving to save lives.", "quiz":[{"question":"Why avoid driving after drinking?","type":"multiple-choice","options":["Prevent accidents","Arrive faster"],"answer":"Prevent accidents"}]}
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Sharing the Road with Large Vehicles",
+      "parts": [
+        {"title":"Truck Limitations","content":"Understand braking and turning needs.", "details":["Longer stopping distances","Wide turns","Logic: Prevent collisions"], "scenario":"Cutting in front of a truck is dangerous.", "quiz":[{"question":"Trucks need:","type":"multiple-choice","options":["Longer stopping distance","Less space"],"answer":"Longer stopping distance"}]},
+        {"title":"Bus Safety","content":"Watch for stopping and turns.", "details":["Do not pass from right if bus is loading","Yield when bus signals"], "scenario":"Ignoring a bus stop can endanger children.", "quiz":[{"question":"You may pass a school bus when?","type":"multiple-choice","options":["Only when lights are off and stop arm withdrawn","Always"],"answer":"Only when lights are off and stop arm withdrawn"}]},
+        {"title":"Motorcycles","content":"Smaller and harder to see.", "details":["Check blind spots","Signal lane changes"], "scenario":"Not noticing a motorcycle in your blind spot can cause crashes.", "quiz":[{"question":"Why check blind spots for motorcycles?","type":"multiple-choice","options":["They’re smaller and harder to see","They signal clearly"],"answer":"They’re smaller and harder to see"}]},
+        {"title":"Bicycles & Pedestrians","content":"Vulnerable road users.", "details":["Allow at least 3 feet passing","Watch for sudden movements"], "scenario":"Opening car door into a cyclist can cause injury.", "quiz":[{"question":"Minimum passing distance for bicycles?","type":"multiple-choice","options":["3 feet","1 foot"],"answer":"3 feet"}]},
+        {"title":"Mini Quiz","content":"Review sharing with large vehicles.", "details":["Scenario review"], "scenario":"Understanding limitations prevents collisions.", "quiz":[{"question":"Why allow trucks extra space?","type":"multiple-choice","options":["Longer stopping distance and wide turns","They drive slower"],"answer":"Longer stopping distance and wide turns"}]}
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Driver Distractions",
+      "parts": [
+        {"title":"Electronic Devices","content":"Texting, calls, and screens increase crash risk.", "details":["No texting","Use hands-free calls only","Logic: Attention is diverted"], "scenario":"Texting at 55 mph reduces reaction time drastically.", "quiz":[{"question":"Texting while driving is:","type":"multiple-choice","options":["Illegal and unsafe","Safe if slow"],"answer":"Illegal and unsafe"}]},
+        {"title":"Passengers & Noise","content":"Manage distractions inside vehicle.", "details":["Limit loud distractions","Focus on driving"], "scenario":"Arguing with passengers can take attention off the road.", "quiz":[{"question":"Why limit passengers’ distractions?","type":"multiple-choice","options":["Maintain focus","They can help"],"answer":"Maintain focus"}]},
+        {"title":"Eating & Drinking","content":"Can divert attention.", "details":["Eat before driving or stop safely","Logic: Hands off wheel reduces control loss"], "scenario":"Spilling coffee may cause abrupt steering.", "quiz":[{"question":"Eating while driving increases:","type":"multiple-choice","options":["Distraction risk","Energy"],"answer":"Distraction risk"}]},
+        {"title":"Adjusting Controls","content":"Set GPS, radio, and mirrors before moving.", "details":["Logic: Avoid multitasking while driving"], "scenario":"Adjusting radio while moving can cause collisions.", "quiz":[{"question":"When adjust GPS?","type":"multiple-choice","options":["Before driving","While moving"],"answer":"Before driving"}]},
+        {"title":"Mini Quiz","content":"Review distractions.", "details":["Scenario review"], "scenario":"Minimizing distractions prevents accidents.", "quiz":[{"question":"Why avoid distractions while driving?","type":"multiple-choice","options":["Maintain attention","Save time"],"answer":"Maintain attention"}]}
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Emergency Situations",
+      "parts": [
+        {"title":"Brake Failure","content":"Use emergency brake and downshift.", "details":["Steer to safety","Avoid panic"], "scenario":"Brake failure on highway can be fatal.", "quiz":[{"question":"First step if brakes fail?","type":"multiple-choice","options":["Use emergency brake","Speed up"],"answer":"Use emergency brake"}]},
+        {"title":"Tire Blowout","content":"Hold steering steady and slow gradually.", "details":["Do not brake hard","Logic: Prevent spin-out"], "scenario":"Sudden tire failure can cause loss of control.", "quiz":[{"question":"Tire blowout:","type":"multiple-choice","options":["Hold wheel steady and slow","Brake immediately"],"answer":"Hold wheel steady and slow"}]},
+        {"title":"Skidding & Loss of Control","content":"Turn into skid and ease off gas.", "details":["Do not slam brakes","Logic: Regain traction"], "scenario":"Overcorrecting during skid causes rollover.", "quiz":[{"question":"If rear wheels skid, you should:","type":"multiple-choice","options":["Turn into skid","Turn opposite"],"answer":"Turn into skid"}]},
+        {"title":"Accidents & Reporting","content":"Stop, warn others, call authorities.", "details":["Move to safe spot if possible","Logic: Legal compliance"], "scenario":"Leaving scene of accident is a serious crime.", "quiz":[{"question":"What to do after minor accident?","type":"multiple-choice","options":["Stop, warn, call authorities","Drive away"],"answer":"Stop, warn, call authorities"}]},
+        {"title":"Mini Quiz","content":"Review emergencies.", "details":["Scenario review"], "scenario":"Knowing emergency steps saves lives.", "quiz":[{"question":"Why remain calm in emergencies?","type":"multiple-choice","options":["Control the situation","Panic helps"],"answer":"Control the situation"}]}
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Lane Discipline",
+      "parts": [
+        {"title":"Lane Markings","content":"White vs yellow lines guide lane usage.", "details":["Solid line = no crossing","Dashed line = permitted passing","Logic: Visual communication"], "scenario":"Crossing a solid line can cause head-on collision.", "quiz":[{"question":"Solid white line means:","type":"multiple-choice","options":["Do not cross","Pass allowed"],"answer":"Do not cross"}]},
+        {"title":"Changing Lanes","content":"Check mirrors, blind spots, and signal.", "details":["Smooth and safe transition","Logic: Predictable movement"], "scenario":"Cutting lanes without signaling causes crashes.", "quiz":[{"question":"Lane change requires:","type":"multiple-choice","options":["Signal and check mirrors","Only signal"],"answer":"Signal and check mirrors"}]},
+        {"title":"Merging","content":"Yield to traffic in target lane.", "details":["Adjust speed to merge safely","Logic: Avoid sudden stops"], "scenario":"Failing to merge smoothly causes collisions.", "quiz":[{"question":"Merging safely requires:","type":"multiple-choice","options":["Yield and adjust speed","Ignore traffic"],"answer":"Yield and adjust speed"}]},
+        {"title":"HOV & Special Lanes","content":"Restricted lanes require qualification.", "details":["Carpool, bus, or bicycle lanes","Logic: Efficient traffic flow"], "scenario":"Unauthorized use of HOV lane can cause fines.", "quiz":[{"question":"HOV lanes are for:","type":"multiple-choice","options":["Qualified vehicles only","All vehicles"],"answer":"Qualified vehicles only"}]},
+        {"title":"Mini Quiz","content":"Review lane discipline.", "details":["Scenario review"], "scenario":"Proper lane usage prevents accidents.", "quiz":[{"question":"Why check blind spots when changing lanes?","type":"multiple-choice","options":["Prevent collisions","Nothing"],"answer":"Prevent collisions"}]}
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Highway Driving",
+      "parts": [
+        {"title":"Entering Highway","content":"Accelerate to match traffic speed.", "details":["Use ramp meter if available","Signal lane change"], "scenario":"Entering too slowly can cause rear-end collisions.", "quiz":[{"question":"How to enter highway safely?","type":"multiple-choice","options":["Accelerate to traffic speed","Slow down"],"answer":"Accelerate to traffic speed"}]},
+        {"title":"Lane Choice & Speed","content":"Use right lane unless passing.", "details":["Left lane for passing only","Logic: Smooth flow"], "scenario":"Driving slowly in left lane blocks traffic.", "quiz":[{"question":"Left lane is for:","type":"multiple-choice","options":["Passing only","Cruising"],"answer":"Passing only"}]},
+        {"title":"Following Distance","content":"Keep at least 3 seconds behind vehicle.", "details":["Increase in bad weather","Logic: Time to react"], "scenario":"Tailgating on highway increases collision risk.", "quiz":[{"question":"Minimum following distance on highway?","type":"multiple-choice","options":["3 seconds","1 second"],"answer":"3 seconds"}]},
+        {"title":"Exiting Highway","content":"Signal early and decelerate safely.", "details":["Use exit lane to slow down","Logic: Avoid collisions"], "scenario":"Missing exit can force abrupt lane change.", "quiz":[{"question":"Before highway exit you should:","type":"multiple-choice","options":["Signal early","Wait until last second"],"answer":"Signal early"}]},
+        {"title":"Mini Quiz","content":"Review highway driving.", "details":["Scenario review"], "scenario":"Safe highway driving prevents crashes.", "quiz":[{"question":"Why keep proper following distance on highway?","type":"multiple-choice","options":["Time to react to traffic","Save fuel"],"answer":"Time to react to traffic"}]}
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Construction Zones",
+      "parts": [
+        {"title":"Speed Limits","content":"Obey posted limits, fines may double.", "details":["Slow down","Stay alert","Logic: Protect workers"], "scenario":"Speeding in construction zone endangers workers.", "quiz":[{"question":"Why reduce speed in construction zone?","type":"multiple-choice","options":["Protect workers","Traffic flow"],"answer":"Protect workers"}]},
+        {"title":"Lane Shifts","content":"Follow cones and signs.", "details":["Do not ignore signage","Logic: Prevent crashes"], "scenario":"Changing lanes unexpectedly can hit workers or vehicles.", "quiz":[{"question":"What to do with lane shifts?","type":"multiple-choice","options":["Follow signage","Ignore"],"answer":"Follow signage"}]},
+        {"title":"Flaggers","content":"Obey directions of workers.", "details":["Logic: Keep traffic and workers safe"], "scenario":"Ignoring a flagger can cause collision.", "quiz":[{"question":"Follow directions of flaggers because:","type":"multiple-choice","options":["Safety","Faster travel"],"answer":"Safety"}]},
+        {"title":"Equipment & Hazards","content":"Be aware of machinery and debris.", "details":["Watch for trucks and cones","Logic: Predict hazards"], "scenario":"Hitting a construction vehicle can be fatal.", "quiz":[{"question":"Why watch for construction equipment?","type":"multiple-choice","options":["Prevent accidents","Nothing"],"answer":"Prevent accidents"}]},
+        {"title":"Mini Quiz","content":"Review construction zones.", "details":["Scenario review"], "scenario":"Caution prevents accidents in zones.", "quiz":[{"question":"Fines in construction zones are higher because:","type":"multiple-choice","options":["Protect workers","Revenue"],"answer":"Protect workers"}]}
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Sharing the Road with Emergency Vehicles",
+      "parts": [
+        {"title":"Recognize Emergency Vehicles","content":"Police, fire, and ambulances.", "details":["Flashing lights and sirens","Logic: They have priority"], "scenario":"Failing to recognize reduces response speed.", "quiz":[{"question":"Emergency vehicles have:","type":"multiple-choice","options":["Priority","No priority"],"answer":"Priority"}]},
+        {"title":"Yielding Rules","content":"Pull over safely to allow passage.", "details":["Do not block intersections","Logic: Clear path prevents delays"], "scenario":"Not pulling over delays emergency response.", "quiz":[{"question":"How to yield to emergency vehicles?","type":"multiple-choice","options":["Pull over to right","Speed up"],"answer":"Pull over to right"}]},
+        {"title":"Intersections","content":"Do not block the intersection.", "details":["Wait if stuck","Logic: Emergency vehicles need clear lanes"], "scenario":"Blocking intersection stops emergency vehicles.", "quiz":[{"question":"Should you block intersection for siren?","type":"multiple-choice","options":["No","Yes"],"answer":"No"}]},
+        {"title":"Parking & Stopping","content":"Do not park in way of emergency vehicles.", "details":["Obey signs","Logic: Access is essential"], "scenario":"Illegal parking blocks fire truck.", "quiz":[{"question":"Why avoid parking in fire lane?","type":"multiple-choice","options":["Allow access","No reason"],"answer":"Allow access"}]},
+        {"title":"Mini Quiz","content":"Review emergency vehicle rules.", "details":["Scenario review"], "scenario":"Proper yielding saves lives.", "quiz":[{"question":"Why yield to sirens and lights?","type":"multiple-choice","options":["They are responding to emergencies","Traffic flow"],"answer":"They are responding to emergencies"}]}
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Driving in Residential Areas",
+      "parts": [
+        {"title":"Speed Limits","content":"Typically 25–35 mph.", "details":["Children and pets present","Logic: Reduced speed prevents accidents"], "scenario":"Exceeding speed limit near schools risks children.", "quiz":[{"question":"Residential speed limits protect:","type":"multiple-choice","options":["Children and pedestrians","Only drivers"],"answer":"Children and pedestrians"}]},
+        {"title":"Pedestrian Safety","content":"Always yield and be alert.", "details":["Crosswalks and sidewalks","Logic: Most vulnerable"], "scenario":"Not yielding can cause serious injury.", "quiz":[{"question":"Pedestrians in residential areas:","type":"multiple-choice","options":["Have right-of-way","Must yield"],"answer":"Have right-of-way"}]},
+        {"title":"Driveways & Alleyways","content":"Expect sudden vehicles.", "details":["Scan carefully","Logic: Predict hazards"], "scenario":"Backing out of driveway without checking causes collisions.", "quiz":[{"question":"Why check driveways?","type":"multiple-choice","options":["Prevent collisions","Nothing"],"answer":"Prevent collisions"}]},
+        {"title":"School Zones","content":"Observe reduced speeds.", "details":["Fines higher","Logic: Protect children"], "scenario":"Ignoring speed in school zone risks lives.", "quiz":[{"question":"Why slow down in school zone?","type":"multiple-choice","options":["Protect children","Arrive faster"],"answer":"Protect children"}]},
+        {"title":"Mini Quiz","content":"Review residential driving.", "details":["Scenario review"], "scenario":"Caution prevents accidents in neighborhoods.", "quiz":[{"question":"Why reduce speed in residential area?","type":"multiple-choice","options":["Children and pets present","Traffic flow"],"answer":"Children and pets present"}]}
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Night Driving",
+      "parts": [
+        {"title":"Headlights & Visibility","content":"Use proper lights for conditions.", "details":["Low beams in fog","High beams on dark roads without traffic","Logic: See and be seen"], "scenario":"High beams in fog reduce visibility.", "quiz":[{"question":"When to use low beams?","type":"multiple-choice","options":["Fog and rain","Empty highway"],"answer":"Fog and rain"}]},
+        {"title":"Reduced Speed","content":"Drive slower than daytime.", "details":["Reaction time limited","Logic: Avoid unseen hazards"], "scenario":"Driving fast at night may miss hazards.", "quiz":[{"question":"Why reduce speed at night?","type":"multiple-choice","options":["Limited visibility","No reason"],"answer":"Limited visibility"}]},
+        {"title":"Pedestrians & Animals","content":"Watch carefully.", "details":["Look for eyes reflecting light","Logic: Avoid collisions"], "scenario":"Hitting an animal can cause serious damage.", "quiz":[{"question":"Why watch for animals at night?","type":"multiple-choice","options":["Harder to see them","No reason"],"answer":"Harder to see them"}]},
+        {"title":"Avoid Glare","content":"Don’t stare at oncoming headlights.", "details":["Look to right edge of road","Logic: Prevent temporary blindness"], "scenario":"Staring at headlights can cause accidents.", "quiz":[{"question":"How to avoid glare from oncoming cars?","type":"multiple-choice","options":["Look to right edge of road","Keep staring"],"answer":"Look to right edge of road"}]},
+        {"title":"Mini Quiz","content":"Review night driving.", "details":["Scenario review"], "scenario":"Caution at night prevents accidents.", "quiz":[{"question":"Why be extra careful at night?","type":"multiple-choice","options":["Reduced visibility","Traffic flow"],"answer":"Reduced visibility"}]}
+      ]
+    }
+  ]
+} {
+  "lessons": [
+    {
+      "id": 21,
+      "title": "Winter Driving",
+      "parts": [
+        {"title":"Snow & Ice","content":"Reduce speed and increase following distance.", "details":["Slippery roads","Logic: Prevent skidding"], "scenario":"Sudden braking on ice can cause collisions.", "quiz":[{"question":"Why slow down on ice?","type":"multiple-choice","options":["Prevent skidding","No reason"],"answer":"Prevent skidding"}]},
+        {"title":"Braking on Ice","content":"Use gentle braking or anti-lock brakes.", "details":["Avoid sudden stops","Logic: Maintain control"], "scenario":"Slamming brakes on ice causes spin.", "quiz":[{"question":"Best braking on ice?","type":"multiple-choice","options":["Gentle braking","Hard braking"],"answer":"Gentle braking"}]},
+        {"title":"Visibility & Lights","content":"Clear snow and ice from all windows.", "details":["Use headlights","Logic: See and be seen"], "scenario":"Obstructed windshield reduces reaction time.", "quiz":[{"question":"Why clear snow from windows?","type":"multiple-choice","options":["Improve visibility","Nothing"],"answer":"Improve visibility"}]},
+        {"title":"Tire Chains & Equipment","content":"Use chains if required.", "details":["Check tire pressure","Carry shovel and sand","Logic: Safety on snowy roads"], "scenario":"Driving without chains on required roads can cause accidents.", "quiz":[{"question":"When use tire chains?","type":"multiple-choice","options":["Required snowy roads","All roads"],"answer":"Required snowy roads"}]},
+        {"title":"Mini Quiz","content":"Review winter driving.", "details":["Scenario review"], "scenario":"Safe winter driving prevents crashes.", "quiz":[{"question":"Why carry shovel and sand in winter?","type":"multiple-choice","options":["Help if stuck","Decoration"],"answer":"Help if stuck"}]}
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Driving in Rain",
+      "parts": [
+        {"title":"Hydroplaning","content":"Slow down to avoid losing traction.", "details":["Do not brake hard","Logic: Maintain control"], "scenario":"High speed in rain can lift tires off road.", "quiz":[{"question":"Hydroplaning prevention?","type":"multiple-choice","options":["Reduce speed","Accelerate"],"answer":"Reduce speed"}]},
+        {"title":"Windshield & Wipers","content":"Ensure visibility is clear.", "details":["Replace worn wipers","Logic: See hazards"], "scenario":"Dirty windshield reduces reaction time.", "quiz":[{"question":"Why maintain wipers?","type":"multiple-choice","options":["Clear visibility","Decoration"],"answer":"Clear visibility"}]},
+        {"title":"Following Distance","content":"Increase distance in rain.", "details":["More stopping distance","Logic: Safety margin"], "scenario":"Tailgating in rain increases crash risk.", "quiz":[{"question":"Following distance in rain?","type":"multiple-choice","options":["Increase","Same"],"answer":"Increase"}]},
+        {"title":"Braking Techniques","content":"Use gentle braking, avoid sudden movements.", "details":["Prevent skidding","Logic: Control vehicle"], "scenario":"Hard braking causes vehicle to skid.", "quiz":[{"question":"How to brake in heavy rain?","type":"multiple-choice","options":["Gently","Hard"],"answer":"Gently"}]},
+        {"title":"Mini Quiz","content":"Review rain driving.", "details":["Scenario review"], "scenario":"Safe rain driving prevents accidents.", "quiz":[{"question":"Why avoid tailgating in rain?","type":"multiple-choice","options":["More stopping distance","Nothing"],"answer":"More stopping distance"}]}
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Driving in Fog",
+      "parts": [
+        {"title":"Visibility","content":"Reduce speed and use low beams.", "details":["Avoid high beams","Logic: High beams reflect fog"], "scenario":"High beams blind you in fog.", "quiz":[{"question":"Best lights in fog?","type":"multiple-choice","options":["Low beams","High beams"],"answer":"Low beams"}]},
+        {"title":"Fog Signals","content":"Use fog lights if equipped.", "details":["Enhances visibility","Logic: Be seen by others"], "scenario":"Not using fog lights reduces your visibility.", "quiz":[{"question":"Fog lights help:","type":"multiple-choice","options":["See and be seen","Nothing"],"answer":"See and be seen"}]},
+        {"title":"Lane Discipline","content":"Follow lane markings closely.", "details":["Do not swerve","Logic: Maintain safe path"], "scenario":"Drifting in fog causes accidents.", "quiz":[{"question":"Lane markings in fog:","type":"multiple-choice","options":["Guide path","Optional"],"answer":"Guide path"}]},
+        {"title":"Avoid Stopping on Road","content":"If needed, pull over safely.", "details":["Turn on hazards","Logic: Reduce risk"], "scenario":"Stopping in lane causes collisions.", "quiz":[{"question":"If stopping in fog, you should:","type":"multiple-choice","options":["Pull over and use hazards","Stop in lane"],"answer":"Pull over and use hazards"}]},
+        {"title":"Mini Quiz","content":"Review fog driving.", "details":["Scenario review"], "scenario":"Proper fog driving prevents accidents.", "quiz":[{"question":"Why reduce speed in fog?","type":"multiple-choice","options":["Limited visibility","Traffic flow"],"answer":"Limited visibility"}]}
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Driving in Wind",
+      "parts": [
+        {"title":"Crosswinds","content":"Hold steering firmly.", "details":["Adjust lane position","Logic: Prevent vehicle from drifting"], "scenario":"Strong gusts can push vehicle off road.", "quiz":[{"question":"Crosswind handling?","type":"multiple-choice","options":["Hold steering","Relax steering"],"answer":"Hold steering"}]},
+        {"title":"High-Profile Vehicles","content":"Extra caution for trucks and buses.", "details":["They are more affected by wind","Logic: Avoid sideswipes"], "scenario":"Passing a truck in wind requires extra space.", "quiz":[{"question":"Wind affects trucks how?","type":"multiple-choice","options":["More than cars","Less than cars"],"answer":"More than cars"}]},
+        {"title":"Bridges & Open Areas","content":"Reduce speed and grip wheel tightly.", "details":["Gusts are stronger","Logic: Control vehicle"], "scenario":"Crossing bridge in wind can be dangerous.", "quiz":[{"question":"Why slow on bridges in wind?","type":"multiple-choice","options":["Gusts stronger","Traffic"],"answer":"Gusts stronger"}]},
+        {"title":"Debris & Hazards","content":"Watch for objects blown onto road.", "details":["Logic: Avoid accidents"], "scenario":"Branches on road can cause crashes.", "quiz":[{"question":"Why watch for debris in wind?","type":"multiple-choice","options":["Avoid collisions","Nothing"],"answer":"Avoid collisions"}]},
+        {"title":"Mini Quiz","content":"Review wind driving.", "details":["Scenario review"], "scenario":"Proper wind driving prevents accidents.", "quiz":[{"question":"Why grip wheel tightly in strong wind?","type":"multiple-choice","options":["Prevent vehicle drift","Relax"],"answer":"Prevent vehicle drift"}]}
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Driving on Hills",
+      "parts": [
+        {"title":"Uphill Driving","content":"Maintain speed and gear.", "details":["Avoid rolling backward","Logic: Smooth ascent"], "scenario":"Stopping mid-hill can be dangerous.", "quiz":[{"question":"Uphill stop:","type":"multiple-choice","options":["Use brake and clutch properly","No technique needed"],"answer":"Use brake and clutch properly"}]},
+        {"title":"Downhill Driving","content":"Use lower gear to control speed.", "details":["Avoid excessive braking","Logic: Prevent brake fade"], "scenario":"Riding brakes downhill can overheat them.", "quiz":[{"question":"Downhill control?","type":"multiple-choice","options":["Use lower gear","Brake constantly"],"answer":"Use lower gear"}]},
+        {"title":"Passing on Hills","content":"Ensure full visibility and clearance.", "details":["Logic: Avoid blind spots"], "scenario":"Passing without seeing road ahead is dangerous.", "quiz":[{"question":"Passing on hill requires:","type":"multiple-choice","options":["Clear visibility","Just guess"],"answer":"Clear visibility"}]},
+        {"title":"Stopping on Hills","content":"Use parking brake if needed.", "details":["Logic: Prevent rollback"], "scenario":"Stopping on hill without brake can roll car backward.", "quiz":[{"question":"How to prevent rollback on hill?","type":"multiple-choice","options":["Use parking brake","Do nothing"],"answer":"Use parking brake"}]},
+        {"title":"Mini Quiz","content":"Review hill driving.", "details":["Scenario review"], "scenario":"Proper hill driving prevents accidents.", "quiz":[{"question":"Why use lower gear downhill?","type":"multiple-choice","options":["Control speed","Nothing"],"answer":"Control speed"}]}
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Roundabouts",
+      "parts": [
+        {"title":"Entering Roundabout","content":"Yield to traffic inside.", "details":["Check all lanes","Logic: Avoid collisions"], "scenario":"Entering without yielding can cause accidents.", "quiz":[{"question":"Yield in roundabout?","type":"multiple-choice","options":["Yes","No"],"answer":"Yes"}]},
+        {"title":"Lane Choice","content":"Choose lane based on exit.", "details":["Logic: Avoid lane changes inside roundabout"], "scenario":"Wrong lane causes exit confusion.", "quiz":[{"question":"Choose lane before entering roundabout?","type":"multiple-choice","options":["Yes","No"],"answer":"Yes"}]},
+        {"title":"Signaling","content":"Signal exit lane.", "details":["Logic: Communicate intentions"], "scenario":"Not signaling confuses other drivers.", "quiz":[{"question":"When to signal in roundabout?","type":"multiple-choice","options":["Exiting","Entering"],"answer":"Exiting"}]},
+        {"title":"Pedestrians & Cyclists","content":"Yield as needed.", "details":["Logic: Safety"], "scenario":"Not yielding can cause injury.", "quiz":[{"question":"Yield to pedestrians in roundabout?","type":"multiple-choice","options":["Yes","No"],"answer":"Yes"}]},
+        {"title":"Mini Quiz","content":"Review roundabouts.", "details":["Scenario review"], "scenario":"Proper use prevents collisions.", "quiz":[{"question":"Why choose lane before roundabout?","type":"multiple-choice","options":["Avoid lane changes inside","No reason"],"answer":"Avoid lane changes inside"}]}
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Parking",
+      "parts": [
+        {"title":"Parallel Parking","content":"Check mirrors and blind spots.", "details":["Use proper technique","Logic: Avoid hitting vehicles"], "scenario":"Improper parallel parking causes collisions.", "quiz":[{"question":"Parallel parking requires:","type":"multiple-choice","options":["Mirrors and technique","Just guess"],"answer":"Mirrors and technique"}]},
+        {"title":"Angle & Perpendicular Parking","content":"Center vehicle in space.", "details":["Avoid hitting adjacent cars","Logic: Maximize space"], "scenario":"Poor alignment can block traffic.", "quiz":[{"question":"Angle parking tip?","type":"multiple-choice","options":["Center vehicle","Park anywhere"],"answer":"Center vehicle"}]},
+        {"title":"Parking on Hills","content":"Use wheel direction and parking brake.", "details":["Logic: Prevent rollback"], "scenario":"Wheels not turned can roll into traffic.", "quiz":[{"question":"Parking on hill:","type":"multiple-choice","options":["Turn wheels and brake","No need"],"answer":"Turn wheels and brake"}]},
+        {"title":"No-Parking Zones","content":"Observe signs and curb markings.", "details":["Logic: Avoid fines"], "scenario":"Parking in prohibited area can cause ticket.", "quiz":[{"question":"No-parking zone reason?","type":"multiple-choice","options":["Safety and access","Nothing"],"answer":"Safety and access"}]},
+        {"title":"Mini Quiz","content":"Review parking.", "details":["Scenario review"], "scenario":"Proper parking prevents collisions.", "quiz":[{"question":"Why use parking brake on hill?","type":"multiple-choice","options":["Prevent rollback","Nothing"],"answer":"Prevent rollback"}]}
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Vehicle Maintenance",
+      "parts": [
+        {"title":"Tires","content":"Check pressure and tread.", "details":["Logic: Prevent blowouts"], "scenario":"Low tire pressure increases crash risk.", "quiz":[{"question":"Check tires because:","type":"multiple-choice","options":["Prevent blowouts","Nothing"],"answer":"Prevent blowouts"}]},
+        {"title":"Lights & Signals","content":"Ensure all working.", "details":["Logic: Communicate with drivers"], "scenario":"Broken brake light can cause rear-end collision.", "quiz":[{"question":"Why maintain lights?","type":"multiple-choice","options":["Safety","Nothing"],"answer":"Safety"}]},
+        {"title":"Fluids","content":"Check oil, brake, coolant.", "details":["Logic: Prevent mechanical failure"], "scenario":"Low brake fluid can cause brake failure.", "quiz":[{"question":"Check fluids to:","type":"multiple-choice","options":["Prevent failure","Save money"],"answer":"Prevent failure"}]},
+        {"title":"Brakes","content":"Ensure proper operation.", "details":["Logic: Safe stopping"], "scenario":"Faulty brakes increase crash risk.", "quiz":[{"question":"Brake check reason?","type":"multiple-choice","options":["Safe stopping","Nothing"],"answer":"Safe stopping"}]},
+        {"title":"Mini Quiz","content":"Review maintenance.", "details":["Scenario review"], "scenario":"Maintained vehicle is safer.", "quiz":[{"question":"Why maintain vehicle?","type":"multiple-choice","options":["Safety","Nothing"],"answer":"Safety"}]}
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Defensive Driving",
+      "parts": [
+        {"title":"Anticipate Hazards","content":"Watch for erratic drivers.", "details":["Plan escape route","Logic: Avoid collisions"], "scenario":"Predicting another driver’s actions prevents accidents.", "quiz":[{"question":"Defensive driving tip?","type":"multiple-choice","options":["Anticipate hazards","Drive fast"],"answer":"Anticipate hazards"}]},
+        {"title":"Keep Distance","content":"Maintain safe following distance.", "details":["Logic: Time to react"], "scenario":"Tailgating reduces reaction time.", "quiz":[{"question":"Safe following distance reason?","type":"multiple-choice","options":["Time to react","Save fuel"],"answer":"Time to react"}]},
+        {"title":"Avoid Blind Spots","content":"Check mirrors and over shoulder.", "details":["Logic: See all around"], "scenario":"Changing lanes without checking blind spots causes collisions.", "quiz":[{"question":"Blind spot check reason?","type":"multiple-choice","options":["Prevent collisions","Nothing"],"answer":"Prevent collisions"}]},
+        {"title":"Predict Intersections","content":"Look ahead and anticipate stops.", "details":["Logic: Reduce surprises"], "scenario":"Sudden stop causes rear-end crash.", "quiz":[{"question":"Intersection prediction helps?","type":"multiple-choice","options":["Reduce surprises","Nothing"],"answer":"Reduce surprises"}]},
+        {"title":"Mini Quiz","content":"Review defensive driving.", "details":["Scenario review"], "scenario":"Defensive driving prevents accidents.", "quiz":[{"question":"Why drive defensively?","type":"multiple-choice","options":["Avoid accidents","Save time"],"answer":"Avoid accidents"}]}
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Eco-Driving",
+      "parts": [
+        {"title":"Smooth Acceleration","content":"Avoid rapid starts.", "details":["Saves fuel","Logic: Reduces emissions"], "scenario":"Hard acceleration wastes fuel.", "quiz":[{"question":"Why accelerate smoothly?","type":"multiple-choice","options":["Save fuel","Faster"],"answer":"Save fuel"}]},
+        {"title":"Maintain Steady Speed","content":"Use cruise control if safe.", "details":["Logic: Reduce fuel consumption"], "scenario":"Speed fluctuations increase fuel use.", "quiz":[{"question":"Steady speed benefits?","type":"multiple-choice","options":["Fuel efficiency","None"],"answer":"Fuel efficiency"}]},
+        {"title":"Reduce Idling","content":"Turn off engine when parked.", "details":["Logic: Prevent pollution and fuel waste"], "scenario":"Idling for long time wastes fuel.", "quiz":[{"question":"Why reduce idling?","type":"multiple-choice","options":["Save fuel","Nothing"],"answer":"Save fuel"}]},
+        {"title":"Proper Tire Inflation","content":"Keep tires at correct pressure.", "details":["Logic: Better fuel economy"], "scenario":"Under-inflated tires increase consumption.", "quiz":[{"question":"Why keep tire pressure correct?","type":"multiple-choice","options":["Fuel efficiency","Nothing"],"answer":"Fuel efficiency"}]},
+        {"title":"Mini Quiz","content":"Review eco-driving.", "details":["Scenario review"], "scenario":"Eco-driving saves money and environment.", "quiz":[{"question":"Why practice eco-driving?","type":"multiple-choice","options":["Save fuel and reduce emissions","Faster"],"answer":"Save fuel and reduce emissions"}]}
+ {
+  "lessons": [
+    {
+      "id": 21,
+      "title": "Winter Driving",
+      "parts": [
+        {"title":"Snow & Ice","content":"Reduce speed and increase following distance.", "details":["Slippery roads","Logic: Prevent skidding"], "scenario":"Sudden braking on ice can cause collisions.", "quiz":[{"question":"Why slow down on ice?","type":"multiple-choice","options":["Prevent skidding","No reason"],"answer":"Prevent skidding"}]},
+        {"title":"Braking on Ice","content":"Use gentle braking or anti-lock brakes.", "details":["Avoid sudden stops","Logic: Maintain control"], "scenario":"Slamming brakes on ice causes spin.", "quiz":[{"question":"Best braking on ice?","type":"multiple-choice","options":["Gentle braking","Hard braking"],"answer":"Gentle braking"}]},
+        {"title":"Visibility & Lights","content":"Clear snow and ice from all windows.", "details":["Use headlights","Logic: See and be seen"], "scenario":"Obstructed windshield reduces reaction time.", "quiz":[{"question":"Why clear snow from windows?","type":"multiple-choice","options":["Improve visibility","Nothing"],"answer":"Improve visibility"}]},
+        {"title":"Tire Chains & Equipment","content":"Use chains if required.", "details":["Check tire pressure","Carry shovel and sand","Logic: Safety on snowy roads"], "scenario":"Driving without chains on required roads can cause accidents.", "quiz":[{"question":"When use tire chains?","type":"multiple-choice","options":["Required snowy roads","All roads"],"answer":"Required snowy roads"}]},
+        {"title":"Mini Quiz","content":"Review winter driving.", "details":["Scenario review"], "scenario":"Safe winter driving prevents crashes.", "quiz":[{"question":"Why carry shovel and sand in winter?","type":"multiple-choice","options":["Help if stuck","Decoration"],"answer":"Help if stuck"}]}
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Driving in Rain",
+      "parts": [
+        {"title":"Hydroplaning","content":"Slow down to avoid losing traction.", "details":["Do not brake hard","Logic: Maintain control"], "scenario":"High speed in rain can lift tires off road.", "quiz":[{"question":"Hydroplaning prevention?","type":"multiple-choice","options":["Reduce speed","Accelerate"],"answer":"Reduce speed"}]},
+        {"title":"Windshield & Wipers","content":"Ensure visibility is clear.", "details":["Replace worn wipers","Logic: See hazards"], "scenario":"Dirty windshield reduces reaction time.", "quiz":[{"question":"Why maintain wipers?","type":"multiple-choice","options":["Clear visibility","Decoration"],"answer":"Clear visibility"}]},
+        {"title":"Following Distance","content":"Increase distance in rain.", "details":["More stopping distance","Logic: Safety margin"], "scenario":"Tailgating in rain increases crash risk.", "quiz":[{"question":"Following distance in rain?","type":"multiple-choice","options":["Increase","Same"],"answer":"Increase"}]},
+        {"title":"Braking Techniques","content":"Use gentle braking, avoid sudden movements.", "details":["Prevent skidding","Logic: Control vehicle"], "scenario":"Hard braking causes vehicle to skid.", "quiz":[{"question":"How to brake in heavy rain?","type":"multiple-choice","options":["Gently","Hard"],"answer":"Gently"}]},
+        {"title":"Mini Quiz","content":"Review rain driving.", "details":["Scenario review"], "scenario":"Safe rain driving prevents accidents.", "quiz":[{"question":"Why avoid tailgating in rain?","type":"multiple-choice","options":["More stopping distance","Nothing"],"answer":"More stopping distance"}]}
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Driving in Fog",
+      "parts": [
+        {"title":"Visibility","content":"Reduce speed and use low beams.", "details":["Avoid high beams","Logic: High beams reflect fog"], "scenario":"High beams blind you in fog.", "quiz":[{"question":"Best lights in fog?","type":"multiple-choice","options":["Low beams","High beams"],"answer":"Low beams"}]},
+        {"title":"Fog Signals","content":"Use fog lights if equipped.", "details":["Enhances visibility","Logic: Be seen by others"], "scenario":"Not using fog lights reduces your visibility.", "quiz":[{"question":"Fog lights help:","type":"multiple-choice","options":["See and be seen","Nothing"],"answer":"See and be seen"}]},
+        {"title":"Lane Discipline","content":"Follow lane markings closely.", "details":["Do not swerve","Logic: Maintain safe path"], "scenario":"Drifting in fog causes accidents.", "quiz":[{"question":"Lane markings in fog:","type":"multiple-choice","options":["Guide path","Optional"],"answer":"Guide path"}]},
+        {"title":"Avoid Stopping on Road","content":"If needed, pull over safely.", "details":["Turn on hazards","Logic: Reduce risk"], "scenario":"Stopping in lane causes collisions.", "quiz":[{"question":"If stopping in fog, you should:","type":"multiple-choice","options":["Pull over and use hazards","Stop in lane"],"answer":"Pull over and use hazards"}]},
+        {"title":"Mini Quiz","content":"Review fog driving.", "details":["Scenario review"], "scenario":"Proper fog driving prevents accidents.", "quiz":[{"question":"Why reduce speed in fog?","type":"multiple-choice","options":["Limited visibility","Traffic flow"],"answer":"Limited visibility"}]}
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Driving in Wind",
+      "parts": [
+        {"title":"Crosswinds","content":"Hold steering firmly.", "details":["Adjust lane position","Logic: Prevent vehicle from drifting"], "scenario":"Strong gusts can push vehicle off road.", "quiz":[{"question":"Crosswind handling?","type":"multiple-choice","options":["Hold steering","Relax steering"],"answer":"Hold steering"}]},
+        {"title":"High-Profile Vehicles","content":"Extra caution for trucks and buses.", "details":["They are more affected by wind","Logic: Avoid sideswipes"], "scenario":"Passing a truck in wind requires extra space.", "quiz":[{"question":"Wind affects trucks how?","type":"multiple-choice","options":["More than cars","Less than cars"],"answer":"More than cars"}]},
+        {"title":"Bridges & Open Areas","content":"Reduce speed and grip wheel tightly.", "details":["Gusts are stronger","Logic: Control vehicle"], "scenario":"Crossing bridge in wind can be dangerous.", "quiz":[{"question":"Why slow on bridges in wind?","type":"multiple-choice","options":["Gusts stronger","Traffic"],"answer":"Gusts stronger"}]},
+        {"title":"Debris & Hazards","content":"Watch for objects blown onto road.", "details":["Logic: Avoid accidents"], "scenario":"Branches on road can cause crashes.", "quiz":[{"question":"Why watch for debris in wind?","type":"multiple-choice","options":["Avoid collisions","Nothing"],"answer":"Avoid collisions"}]},
+        {"title":"Mini Quiz","content":"Review wind driving.", "details":["Scenario review"], "scenario":"Proper wind driving prevents accidents.", "quiz":[{"question":"Why grip wheel tightly in strong wind?","type":"multiple-choice","options":["Prevent vehicle drift","Relax"],"answer":"Prevent vehicle drift"}]}
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Driving on Hills",
+      "parts": [
+        {"title":"Uphill Driving","content":"Maintain speed and gear.", "details":["Avoid rolling backward","Logic: Smooth ascent"], "scenario":"Stopping mid-hill can be dangerous.", "quiz":[{"question":"Uphill stop:","type":"multiple-choice","options":["Use brake and clutch properly","No technique needed"],"answer":"Use brake and clutch properly"}]},
+        {"title":"Downhill Driving","content":"Use lower gear to control speed.", "details":["Avoid excessive braking","Logic: Prevent brake fade"], "scenario":"Riding brakes downhill can overheat them.", "quiz":[{"question":"Downhill control?","type":"multiple-choice","options":["Use lower gear","Brake constantly"],"answer":"Use lower gear"}]},
+        {"title":"Passing on Hills","content":"Ensure full visibility and clearance.", "details":["Logic: Avoid blind spots"], "scenario":"Passing without seeing road ahead is dangerous.", "quiz":[{"question":"Passing on hill requires:","type":"multiple-choice","options":["Clear visibility","Just guess"],"answer":"Clear visibility"}]},
+        {"title":"Stopping on Hills","content":"Use parking brake if needed.", "details":["Logic: Prevent rollback"], "scenario":"Stopping on hill without brake can roll car backward.", "quiz":[{"question":"How to prevent rollback on hill?","type":"multiple-choice","options":["Use parking brake","Do nothing"],"answer":"Use parking brake"}]},
+        {"title":"Mini Quiz","content":"Review hill driving.", "details":["Scenario review"], "scenario":"Proper hill driving prevents accidents.", "quiz":[{"question":"Why use lower gear downhill?","type":"multiple-choice","options":["Control speed","Nothing"],"answer":"Control speed"}]}
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Roundabouts",
+      "parts": [
+        {"title":"Entering Roundabout","content":"Yield to traffic inside.", "details":["Check all lanes","Logic: Avoid collisions"], "scenario":"Entering without yielding can cause accidents.", "quiz":[{"question":"Yield in roundabout?","type":"multiple-choice","options":["Yes","No"],"answer":"Yes"}]},
+        {"title":"Lane Choice","content":"Choose lane based on exit.", "details":["Logic: Avoid lane changes inside roundabout"], "scenario":"Wrong lane causes exit confusion.", "quiz":[{"question":"Choose lane before entering roundabout?","type":"multiple-choice","options":["Yes","No"],"answer":"Yes"}]},
+        {"title":"Signaling","content":"Signal exit lane.", "details":["Logic: Communicate intentions"], "scenario":"Not signaling confuses other drivers.", "quiz":[{"question":"When to signal in roundabout?","type":"multiple-choice","options":["Exiting","Entering"],"answer":"Exiting"}]},
+        {"title":"Pedestrians & Cyclists","content":"Yield as needed.", "details":["Logic: Safety"], "scenario":"Not yielding can cause injury.", "quiz":[{"question":"Yield to pedestrians in roundabout?","type":"multiple-choice","options":["Yes","No"],"answer":"Yes"}]},
+        {"title":"Mini Quiz","content":"Review roundabouts.", "details":["Scenario review"], "scenario":"Proper use prevents collisions.", "quiz":[{"question":"Why choose lane before roundabout?","type":"multiple-choice","options":["Avoid lane changes inside","No reason"],"answer":"Avoid lane changes inside"}]}
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Parking",
+      "parts": [
+        {"title":"Parallel Parking","content":"Check mirrors and blind spots.", "details":["Use proper technique","Logic: Avoid hitting vehicles"], "scenario":"Improper parallel parking causes collisions.", "quiz":[{"question":"Parallel parking requires:","type":"multiple-choice","options":["Mirrors and technique","Just guess"],"answer":"Mirrors and technique"}]},
+        {"title":"Angle & Perpendicular Parking","content":"Center vehicle in space.", "details":["Avoid hitting adjacent cars","Logic: Maximize space"], "scenario":"Poor alignment can block traffic.", "quiz":[{"question":"Angle parking tip?","type":"multiple-choice","options":["Center vehicle","Park anywhere"],"answer":"Center vehicle"}]},
+        {"title":"Parking on Hills","content":"Use wheel direction and parking brake.", "details":["Logic: Prevent rollback"], "scenario":"Wheels not turned can roll into traffic.", "quiz":[{"question":"Parking on hill:","type":"multiple-choice","options":["Turn wheels and brake","No need"],"answer":"Turn wheels and brake"}]},
+        {"title":"No-Parking Zones","content":"Observe signs and curb markings.", "details":["Logic: Avoid fines"], "scenario":"Parking in prohibited area can cause ticket.", "quiz":[{"question":"No-parking zone reason?","type":"multiple-choice","options":["Safety and access","Nothing"],"answer":"Safety and access"}]},
+        {"title":"Mini Quiz","content":"Review parking.", "details":["Scenario review"], "scenario":"Proper parking prevents collisions.", "quiz":[{"question":"Why use parking brake on hill?","type":"multiple-choice","options":["Prevent rollback","Nothing"],"answer":"Prevent rollback"}]}
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Vehicle Maintenance",
+      "parts": [
+        {"title":"Tires","content":"Check pressure and tread.", "details":["Logic: Prevent blowouts"], "scenario":"Low tire pressure increases crash risk.", "quiz":[{"question":"Check tires because:","type":"multiple-choice","options":["Prevent blowouts","Nothing"],"answer":"Prevent blowouts"}]},
+        {"title":"Lights & Signals","content":"Ensure all working.", "details":["Logic: Communicate with drivers"], "scenario":"Broken brake light can cause rear-end collision.", "quiz":[{"question":"Why maintain lights?","type":"multiple-choice","options":["Safety","Nothing"],"answer":"Safety"}]},
+        {"title":"Fluids","content":"Check oil, brake, coolant.", "details":["Logic: Prevent mechanical failure"], "scenario":"Low brake fluid can cause brake failure.", "quiz":[{"question":"Check fluids to:","type":"multiple-choice","options":["Prevent failure","Save money"],"answer":"Prevent failure"}]},
+        {"title":"Brakes","content":"Ensure proper operation.", "details":["Logic: Safe stopping"], "scenario":"Faulty brakes increase crash risk.", "quiz":[{"question":"Brake check reason?","type":"multiple-choice","options":["Safe stopping","Nothing"],"answer":"Safe stopping"}]},
+        {"title":"Mini Quiz","content":"Review maintenance.", "details":["Scenario review"], "scenario":"Maintained vehicle is safer.", "quiz":[{"question":"Why maintain vehicle?","type":"multiple-choice","options":["Safety","Nothing"],"answer":"Safety"}]}
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Defensive Driving",
+      "parts": [
+        {"title":"Anticipate Hazards","content":"Watch for erratic drivers.", "details":["Plan escape route","Logic: Avoid collisions"], "scenario":"Predicting another driver’s actions prevents accidents.", "quiz":[{"question":"Defensive driving tip?","type":"multiple-choice","options":["Anticipate hazards","Drive fast"],"answer":"Anticipate hazards"}]},
+        {"title":"Keep Distance","content":"Maintain safe following distance.", "details":["Logic: Time to react"], "scenario":"Tailgating reduces reaction time.", "quiz":[{"question":"Safe following distance reason?","type":"multiple-choice","options":["Time to react","Save fuel"],"answer":"Time to react"}]},
+        {"title":"Avoid Blind Spots","content":"Check mirrors and over shoulder.", "details":["Logic: See all around"], "scenario":"Changing lanes without checking blind spots causes collisions.", "quiz":[{"question":"Blind spot check reason?","type":"multiple-choice","options":["Prevent collisions","Nothing"],"answer":"Prevent collisions"}]},
+        {"title":"Predict Intersections","content":"Look ahead and anticipate stops.", "details":["Logic: Reduce surprises"], "scenario":"Sudden stop causes rear-end crash.", "quiz":[{"question":"Intersection prediction helps?","type":"multiple-choice","options":["Reduce surprises","Nothing"],"answer":"Reduce surprises"}]},
+        {"title":"Mini Quiz","content":"Review defensive driving.", "details":["Scenario review"], "scenario":"Defensive driving prevents accidents.", "quiz":[{"question":"Why drive defensively?","type":"multiple-choice","options":["Avoid accidents","Save time"],"answer":"Avoid accidents"}]}
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Eco-Driving",
+      "parts": [
+        {"title":"Smooth Acceleration","content":"Avoid rapid starts.", "details":["Saves fuel","Logic: Reduces emissions"], "scenario":"Hard acceleration wastes fuel.", "quiz":[{"question":"Why accelerate smoothly?","type":"multiple-choice","options":["Save fuel","Faster"],"answer":"Save fuel"}]},
+        {"title":"Maintain Steady Speed","content":"Use cruise control if safe.", "details":["Logic: Reduce fuel consumption"], "scenario":"Speed fluctuations increase fuel use.", "quiz":[{"question":"Steady speed benefits?","type":"multiple-choice","options":["Fuel efficiency","None"],"answer":"Fuel efficiency"}]},
+        {"title":"Reduce Idling","content":"Turn off engine when parked.", "details":["Logic: Prevent pollution and fuel waste"], "scenario":"Idling for long time wastes fuel.", "quiz":[{"question":"Why reduce idling?","type":"multiple-choice","options":["Save fuel","Nothing"],"answer":"Save fuel"}]},
+        {"title":"Proper Tire Inflation","content":"Keep tires at correct pressure.", "details":["Logic: Better fuel economy"], "scenario":"Under-inflated tires increase consumption.", "quiz":[{"question":"Why keep tire pressure correct?","type":"multiple-choice","options":["Fuel efficiency","Nothing"],"answer":"Fuel efficiency"}]},
+        {"title":"Mini Quiz","content":"Review eco-driving.", "details":["Scenario review"], "scenario":"Eco-driving saves money and environment.", "quiz":[{"question":"Why practice eco-driving?","type":"multiple-choice","options":["Save fuel and reduce emissions","Faster"],"answer":"Save fuel and reduce emissions"}]}
+      ]
+    }
+  ]
+}
+{
+  "lessons": [
+    {
+      "id": 31,
+      "title": "Night Driving",
+      "parts": [
+        {"title":"Use Headlights Properly","content":"Turn on low beams at night or in low visibility.", "details":["Avoid high beams near other vehicles","Logic: See and be seen"], "scenario":"High beams can blind oncoming drivers.", "quiz":[{"question":"Best lights at night near traffic?","type":"multiple-choice","options":["Low beams","High beams"],"answer":"Low beams"}]},
+        {"title":"Reduce Speed","content":"Drive slower at night.", "details":["Logic: Less visibility, more reaction time"], "scenario":"Faster speeds increase crash risk.", "quiz":[{"question":"Why slow down at night?","type":"multiple-choice","options":["Less visibility","Nothing"],"answer":"Less visibility"}]},
+        {"title":"Watch for Pedestrians","content":"Be alert for people and animals.", "details":["Logic: Night reduces visibility"], "scenario":"Pedestrian suddenly crossing can cause accidents.", "quiz":[{"question":"Night driving caution?","type":"multiple-choice","options":["Watch for pedestrians","Ignore"],"answer":"Watch for pedestrians"}]},
+        {"title":"Avoid Drowsy Driving","content":"Do not drive if tired.", "details":["Logic: Reaction time decreases"], "scenario":"Falling asleep at wheel causes crashes.", "quiz":[{"question":"Why avoid driving when drowsy?","type":"multiple-choice","options":["Reduce accidents","Nothing"],"answer":"Reduce accidents"}]},
+        {"title":"Mini Quiz","content":"Review night driving.", "details":["Scenario review"], "scenario":"Safe night driving prevents accidents.", "quiz":[{"question":"Why use low beams near traffic?","type":"multiple-choice","options":["Prevent blinding others","See better"],"answer":"Prevent blinding others"}]}
+      ]
+    },
+    {
+      "id": 32,
+      "title": "School Zones",
+      "parts": [
+        {"title":"Reduce Speed","content":"Follow posted speed limits.", "details":["Logic: Children may enter roadway"], "scenario":"Exceeding speed in school zone is dangerous.", "quiz":[{"question":"Speed in school zones?","type":"multiple-choice","options":["Follow limit","Drive fast"],"answer":"Follow limit"}]},
+        {"title":"Watch for Children","content":"Be alert near crosswalks.", "details":["Logic: Children can be unpredictable"], "scenario":"Child runs into street suddenly.", "quiz":[{"question":"School zone caution?","type":"multiple-choice","options":["Watch children","Ignore"],"answer":"Watch children"}]},
+        {"title":"Stop for School Buses","content":"Stop when bus lights flashing.", "details":["Logic: Children boarding or leaving"], "scenario":"Passing bus causes serious accidents.", "quiz":[{"question":"When to stop for bus?","type":"multiple-choice","options":["Flashing lights","Any time"],"answer":"Flashing lights"}]},
+        {"title":"No Passing","content":"Do not pass in school zone.", "details":["Logic: Increased safety"], "scenario":"Passing vehicles endangers kids.", "quiz":[{"question":"Passing in school zone?","type":"multiple-choice","options":["Never","Sometimes"],"answer":"Never"}]},
+        {"title":"Mini Quiz","content":"Review school zones.", "details":["Scenario review"], "scenario":"Safe driving protects children.", "quiz":[{"question":"Why follow school zone rules?","type":"multiple-choice","options":["Safety of children","Nothing"],"answer":"Safety of children"}]}
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Sharing the Road",
+      "parts": [
+        {"title":"Bicyclists","content":"Give adequate space when passing.", "details":["Logic: Avoid collisions"], "scenario":"Hitting cyclist causes serious injury.", "quiz":[{"question":"Passing bicyclist?","type":"multiple-choice","options":["Leave space","Pass closely"],"answer":"Leave space"}]},
+        {"title":"Motorcycles","content":"Check blind spots.", "details":["Logic: Motorcycles smaller than cars"], "scenario":"Not seeing motorcycle causes accidents.", "quiz":[{"question":"Motorcycle caution?","type":"multiple-choice","options":["Check blind spots","Ignore"],"answer":"Check blind spots"}]},
+        {"title":"Pedestrians","content":"Always yield at crosswalks.", "details":["Logic: Right-of-way laws"], "scenario":"Ignoring crosswalk causes collisions.", "quiz":[{"question":"Pedestrian crosswalk?","type":"multiple-choice","options":["Yield","Go"],"answer":"Yield"}]},
+        {"title":"Large Vehicles","content":"Be careful when passing or following.", "details":["Logic: Limited visibility and longer stopping"], "scenario":"Tailgating truck is dangerous.", "quiz":[{"question":"Large vehicle caution?","type":"multiple-choice","options":["More distance","No change"],"answer":"More distance"}]},
+        {"title":"Mini Quiz","content":"Review sharing the road.", "details":["Scenario review"], "scenario":"Respecting all road users prevents accidents.", "quiz":[{"question":"Why give space to cyclists?","type":"multiple-choice","options":["Prevent collisions","Nothing"],"answer":"Prevent collisions"}]}
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Intersections",
+      "parts": [
+        {"title":"Stop Signs","content":"Come to complete stop.", "details":["Logic: Safety before proceeding"], "scenario":"Rolling stop increases risk of collision.", "quiz":[{"question":"Stop at stop sign?","type":"multiple-choice","options":["Yes","No"],"answer":"Yes"}]},
+        {"title":"Traffic Lights","content":"Obey all signals.", "details":["Logic: Avoid accidents"], "scenario":"Running red light can cause T-bone crash.", "quiz":[{"question":"Red light rule?","type":"multiple-choice","options":["Stop","Go"],"answer":"Stop"}]},
+        {"title":"Right-of-Way","content":"Yield as required.", "details":["Logic: Avoid conflicts"], "scenario":"Ignoring right-of-way leads to accidents.", "quiz":[{"question":"Right-of-way importance?","type":"multiple-choice","options":["Avoid collisions","Speed advantage"],"answer":"Avoid collisions"}]},
+        {"title":"Left Turns","content":"Yield to oncoming traffic.", "details":["Logic: Prevent head-on collisions"], "scenario":"Turning left without yielding can cause crash.", "quiz":[{"question":"Left turn rule?","type":"multiple-choice","options":["Yield to oncoming","Go first"],"answer":"Yield to oncoming"}]},
+        {"title":"Mini Quiz","content":"Review intersections.", "details":["Scenario review"], "scenario":"Proper intersection behavior prevents accidents.", "quiz":[{"question":"Why yield at intersection?","type":"multiple-choice","options":["Avoid collisions","Save time"],"answer":"Avoid collisions"}]}
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Freeway Driving",
+      "parts": [
+        {"title":"Merging","content":"Use acceleration lane to match speed.", "details":["Logic: Smooth merge"], "scenario":"Slow merge can cause accidents.", "quiz":[{"question":"Merging onto freeway?","type":"multiple-choice","options":["Match speed","Stop"],"answer":"Match speed"}]},
+        {"title":"Lane Changes","content":"Check mirrors and blind spots.", "details":["Logic: Avoid collisions"], "scenario":"Changing lane without checking can hit others.", "quiz":[{"question":"Lane change on freeway?","type":"multiple-choice","options":["Check blind spots","Just turn"],"answer":"Check blind spots"}]},
+        {"title":"Following Distance","content":"Maintain 3-4 second gap.", "details":["Logic: Adequate stopping distance"], "scenario":"Tailgating can cause crash.", "quiz":[{"question":"Freeway following distance?","type":"multiple-choice","options":["3-4 sec","1 sec"],"answer":"3-4 sec"}]},
+        {"title":"Exit Ramps","content":"Signal early and slow gradually.", "details":["Logic: Safe exit"], "scenario":"Last-minute exit causes collision.", "quiz":[{"question":"Exit freeway safely?","type":"multiple-choice","options":["Signal early","Brake last minute"],"answer":"Signal early"}]},
+        {"title":"Mini Quiz","content":"Review freeway driving.", "details":["Scenario review"], "scenario":"Proper freeway behavior prevents accidents.", "quiz":[{"question":"Why maintain distance on freeway?","type":"multiple-choice","options":["Stopping time","Save fuel"],"answer":"Stopping time"}]}
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Traffic Signs & Signals",
+      "parts": [
+        {"title":"Regulatory Signs","content":"Follow all rules indicated.", "details":["Logic: Legal compliance"], "scenario":"Ignoring stop sign causes tickets and accidents.", "quiz":[{"question":"Regulatory signs?","type":"multiple-choice","options":["Follow them","Ignore"],"answer":"Follow them"}]},
+        {"title":"Warning Signs","content":"Pay attention to upcoming conditions.", "details":["Logic: Prepare for hazards"], "scenario":"Curve ahead requires slowing down.", "quiz":[{"question":"Warning signs purpose?","type":"multiple-choice","options":["Prepare for hazards","Decoration"],"answer":"Prepare for hazards"}]},
+        {"title":"Guide Signs","content":"Provide directions and distances.", "details":["Logic: Navigation"], "scenario":"Missing exit can cause detours.", "quiz":[{"question":"Guide signs show?","type":"multiple-choice","options":["Directions and distance","Nothing"],"answer":"Directions and distance"}]},
+        {"title":"Traffic Signals","content":"Follow lights at all times.", "details":["Logic: Traffic flow and safety"], "scenario":"Running red light causes crashes.", "quiz":[{"question":"Traffic signals importance?","type":"multiple-choice","options":["Control flow","Nothing"],"answer":"Control flow"}]},
+        {"title":"Mini Quiz","content":"Review traffic signs and signals.", "details":["Scenario review"], "scenario":"Understanding signs prevents accidents.", "quiz":[{"question":"Why obey regulatory signs?","type":"multiple-choice","options":["Legal and safety","Nothing"],"answer":"Legal and safety"}]}
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Emergency Situations",
+      "parts": [
+        {"title":"Brake Failure","content":"Pump brakes or use parking brake.", "details":["Logic: Maintain control"], "scenario":"Sudden brake failure requires calm response.", "quiz":[{"question":"Brake failure action?","type":"multiple-choice","options":["Pump brakes","Do nothing"],"answer":"Pump brakes"}]},
+        {"title":"Tire Blowout","content":"Hold steering and slow gradually.", "details":["Logic: Avoid spin"], "scenario":"Sudden tire blowout can flip car.", "quiz":[{"question":"Tire blowout response?","type":"multiple-choice","options":["Hold wheel, slow","Brake hard"],"answer":"Hold wheel, slow"}]},
+        {"title":"Engine Failure","content":"Shift to neutral and steer safely.", "details":["Logic: Maintain vehicle control"], "scenario":"Engine stalls in traffic.", "quiz":[{"question":"Engine failure action?","type":"multiple-choice","options":["Shift to neutral, steer","Turn off and leave"],"answer":"Shift to neutral, steer"}]},
+        {"title":"Accident Scene","content":"Move to safety and call 911.", "details":["Logic: Prevent further accidents"], "scenario":"Blocking road increases danger.", "quiz":[{"question":"After minor crash?","type":"multiple-choice","options":["Move to safety, call 911","Stay in lane"],"answer":"Move to safety, call 911"}]},
+        {"title":"Mini Quiz","content":"Review emergencies.", "details":["Scenario review"], "scenario":"Correct responses reduce risk.", "quiz":[{"question":"Why move to safety after accident?","type":"multiple-choice","options":["Prevent further accidents","Nothing"],"answer":"Prevent further accidents"}]}
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Distracted Driving",
+      "parts": [
+        {"title":"Mobile Phones","content":"Do not text or call while driving.", "details":["Logic: Distraction increases crash risk"], "scenario":"Looking at phone causes collision.", "quiz":[{"question":"Texting while driving?","type":"multiple-choice","options":["Never","Sometimes"],"answer":"Never"}]},
+        {"title":"Eating & Drinking","content":"Avoid while driving.", "details":["Logic: Keep attention on road"], "scenario":"Spilling drink causes distraction.", "quiz":[{"question":"Eat/drink while driving?","type":"multiple-choice","options":["Avoid","Fine"],"answer":"Avoid"}]},
+        {"title":"Passengers","content":"Manage distractions from others.", "details":["Logic: Stay focused"], "scenario":"Engaging with passengers can divert attention.", "quiz":[{"question":"Passenger distraction?","type":"multiple-choice","options":["Limit interaction","Do nothing"],"answer":"Limit interaction"}]},
+        {"title":"In-Car Technology","content":"Set up GPS, music before driving.", "details":["Logic: Avoid adjustments while moving"], "scenario":"Adjusting GPS mid-drive causes accidents.", "quiz":[{"question":"GPS adjustment during driving?","type":"multiple-choice","options":["Do before driving","Do while moving"],"answer":"Do before driving"}]},
+        {"title":"Mini Quiz","content":"Review distracted driving.", "details":["Scenario review"], "scenario":"Avoiding distractions prevents accidents.", "quiz":[{"question":"Why avoid distractions?","type":"multiple-choice","options":["Safety","Nothing"],"answer":"Safety"}]}
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Aggressive Driving",
+      "parts": [
+        {"title":"Avoid Tailgating","content":"Keep safe distance.", "details":["Logic: Reaction time"], "scenario":"Tailgating may provoke crash.", "quiz":[{"question":"Tailgating is:","type":"multiple-choice","options":["Unsafe","Safe"],"answer":"Unsafe"}]},
+        {"title":"No Road Rage","content":"Stay calm even if others provoke.", "details":["Logic: Prevent accidents"], "scenario":"Angry driving increases crash risk.", "quiz":[{"question":"Road rage prevention?","type":"multiple-choice","options":["Stay calm","Respond angrily"],"answer":"Stay calm"}]},
+        {"title":"Obey Speed Limits","content":"Do not speed to intimidate.", "details":["Logic: Safety"], "scenario":"Speeding increases chance of crash.", "quiz":[{"question":"Speeding to intimidate?","type":"multiple-choice","options":["Never","Sometimes"],"answer":"Never"}]},
+        {"title":"Signal Intentions","content":"Use turn signals.", "details":["Logic: Prevent surprises"], "scenario":"Not signaling frustrates other drivers.", "quiz":[{"question":"Signaling purpose?","type":"multiple-choice","options":["Prevent accidents","Ignore"],"answer":"Prevent accidents"}]},
+        {"title":"Mini Quiz","content":"Review aggressive driving.", "details":["Scenario review"], "scenario":"Calm driving prevents crashes.", "quiz":[{"question":"Why signal your turn?","type":"multiple-choice","options":["Prevent accidents","Nothing"],"answer":"Prevent accidents"}]}
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Road Rage & Impairment",
+      "parts": [
+        {"title":"Alcohol & Drugs","content":"Never drive impaired.", "details":["Logic: Reaction time and judgment"], "scenario":"Impaired driving causes fatal crashes.", "quiz":[{"question":"Driving under influence?","type":"multiple-choice","options":["Never","Sometimes"],"answer":"Never"}]},
+        {"title":"Fatigue","content":"Rest before long trips.", "details":["Logic: Avoid falling asleep"], "scenario":"Tired driver may veer off road.", "quiz":[{"question":"Driving while tired?","type":"multiple-choice","options":["Avoid","Fine"],"answer":"Avoid"}]},
+        {"title":"Anger Management","content":"Do not engage aggressive drivers.", "details":["Logic: Avoid escalation"], "scenario":"Responding to anger can escalate crash risk.", "quiz":[{"question":"Road rage response?","type":"multiple-choice","options":["Stay calm","Retaliate"],"answer":"Stay calm"}]},
+        {"title":"Report Dangerous Drivers","content":"Contact authorities if needed.", "details":["Logic: Safety for all"], "scenario":"Dangerous driving endangers everyone.", "quiz":[{"question":"Dangerous driver?","type":"multiple-choice","options":["Report safely","Ignore"],"answer":"Report safely"}]},
+        {"title":"Mini Quiz","content":"Review impairment and road rage.", "details":["Scenario review"], "scenario":"Avoiding impaired or aggressive driving saves lives.", "quiz":[{"question":"Why avoid driving impaired?","type":"multiple-choice","options":["Safety","Nothing"],"answer":"Safety"}]}
+      ]
+    }
+  ]
+}
+{
+  "lessons": [
+    {
+      "id": 41,
+      "title": "Weather Conditions",
+      "parts": [
+        {"title":"Rain","content":"Reduce speed and increase following distance.", "details":["Logic: Roads are slippery","Use headlights"], "scenario":"Hydroplaning risk.", "quiz":[{"question":"Rainy driving adjustment?","type":"multiple-choice","options":["Slow down","Speed up"],"answer":"Slow down"}]},
+        {"title":"Snow & Ice","content":"Drive slowly and gently.", "details":["Logic: Traction is reduced"], "scenario":"Sliding on ice can cause crash.", "quiz":[{"question":"Snowy roads?","type":"multiple-choice","options":["Drive gently","Speed up"],"answer":"Drive gently"}]},
+        {"title":"Fog","content":"Use low beams and fog lights.", "details":["Logic: Visibility reduced"], "scenario":"High beams reflect and blind.", "quiz":[{"question":"Fog driving?","type":"multiple-choice","options":["Low beams","High beams"],"answer":"Low beams"}]},
+        {"title":"Wind","content":"Keep both hands on wheel.", "details":["Logic: Wind can push car"], "scenario":"Crosswinds on bridges.", "quiz":[{"question":"Windy driving?","type":"multiple-choice","options":["Hold wheel firmly","One hand"],"answer":"Hold wheel firmly"}]},
+        {"title":"Mini Quiz","content":"Review weather conditions.", "details":["Scenario review"], "scenario":"Adjusting driving prevents accidents.", "quiz":[{"question":"Why reduce speed in rain?","type":"multiple-choice","options":["Prevent hydroplaning","Nothing"],"answer":"Prevent hydroplaning"}]}
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Night & Limited Visibility",
+      "parts": [
+        {"title":"Headlights","content":"Use properly for visibility.", "details":["Logic: See and be seen"], "scenario":"Dark rural road.", "quiz":[{"question":"Night visibility?","type":"multiple-choice","options":["Use headlights","None"],"answer":"Use headlights"}]},
+        {"title":"Fog & Smoke","content":"Use low beams and reduce speed.", "details":["Logic: High beams blind"], "scenario":"Forest fire smoke reducing vision.", "quiz":[{"question":"Fog driving?","type":"multiple-choice","options":["Low beams","High beams"],"answer":"Low beams"}]},
+        {"title":"Rain & Mist","content":"Wipers and defogger on.", "details":["Logic: Clear windshield"], "scenario":"Driving in misty rain.", "quiz":[{"question":"Mist driving?","type":"multiple-choice","options":["Use wipers/defog","Ignore"],"answer":"Use wipers/defog"}]},
+        {"title":"Snow","content":"Drive slowly and use headlights.", "details":["Logic: Reduced traction"], "scenario":"Snowstorm highway.", "quiz":[{"question":"Snowstorm rule?","type":"multiple-choice","options":["Slow with lights","Fast"],"answer":"Slow with lights"}]},
+        {"title":"Mini Quiz","content":"Review night & limited visibility.", "details":["Scenario review"], "scenario":"Proper visibility precautions save lives.", "quiz":[{"question":"Why low beams in fog?","type":"multiple-choice","options":["Prevent glare","Nothing"],"answer":"Prevent glare"}]}
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Highway Safety",
+      "parts": [
+        {"title":"Lane Discipline","content":"Stay in proper lane.", "details":["Logic: Predictable driving"], "scenario":"Swerving causes accidents.", "quiz":[{"question":"Highway lane?","type":"multiple-choice","options":["Stay in lane","Swerving"],"answer":"Stay in lane"}]},
+        {"title":"Overtaking","content":"Pass only when safe.", "details":["Logic: Avoid collisions"], "scenario":"Blind curve overtaking.", "quiz":[{"question":"Passing rule?","type":"multiple-choice","options":["Safe pass only","Always pass"],"answer":"Safe pass only"}]},
+        {"title":"Merging Traffic","content":"Adjust speed to merge smoothly.", "details":["Logic: Prevent collisions"], "scenario":"Busy on-ramp.", "quiz":[{"question":"Merging adjustment?","type":"multiple-choice","options":["Match speed","Stop"],"answer":"Match speed"}]},
+        {"title":"Truck Safety","content":"Give extra space.", "details":["Logic: Longer stopping distance"], "scenario":"Tailgating a truck.", "quiz":[{"question":"Near trucks?","type":"multiple-choice","options":["Keep distance","Close"],"answer":"Keep distance"}]},
+        {"title":"Mini Quiz","content":"Review highway safety.", "details":["Scenario review"], "scenario":"Safe driving prevents crashes.", "quiz":[{"question":"Why stay in lane?","type":"multiple-choice","options":["Predictable driving","Nothing"],"answer":"Predictable driving"}]}
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Parking",
+      "parts": [
+        {"title":"Parallel Parking","content":"Align vehicle properly.", "details":["Logic: Avoid hitting others"], "scenario":"City street parallel parking.", "quiz":[{"question":"Parallel park step?","type":"multiple-choice","options":["Align vehicle","Random"],"answer":"Align vehicle"}]},
+        {"title":"Angle Parking","content":"Center in space.", "details":["Logic: Prevent door dings"], "scenario":"Parking lot angle space.", "quiz":[{"question":"Angle park?","type":"multiple-choice","options":["Center","Side"],"answer":"Center"}]},
+        {"title":"Perpendicular Parking","content":"Check surroundings.", "details":["Logic: Pedestrian safety"], "scenario":"Busy lot.", "quiz":[{"question":"Perpendicular parking?","type":"multiple-choice","options":["Check surroundings","Ignore"],"answer":"Check surroundings"}]},
+        {"title":"Parking on Hills","content":"Use parking brake and wheels properly.", "details":["Logic: Vehicle won't roll"], "scenario":"Hilly street parking.", "quiz":[{"question":"Hill parking?","type":"multiple-choice","options":["Use brake and wheels","None"],"answer":"Use brake and wheels"}]},
+        {"title":"Mini Quiz","content":"Review parking.", "details":["Scenario review"], "scenario":"Proper parking prevents accidents.", "quiz":[{"question":"Why check surroundings?","type":"multiple-choice","options":["Pedestrian safety","Nothing"],"answer":"Pedestrian safety"}]}
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Seat Belts & Safety Devices",
+      "parts": [
+        {"title":"Seat Belts","content":"Always wear seat belt.", "details":["Logic: Prevent injury"], "scenario":"Crash scenario.", "quiz":[{"question":"Seat belt?","type":"multiple-choice","options":["Always wear","Optional"],"answer":"Always wear"}]},
+        {"title":"Child Safety Seats","content":"Use proper seat for age/weight.", "details":["Logic: Child protection"], "scenario":"Child in car.", "quiz":[{"question":"Child seat?","type":"multiple-choice","options":["Proper seat","None"],"answer":"Proper seat"}]},
+        {"title":"Airbags","content":"Do not sit too close.", "details":["Logic: Prevent injury from airbag"], "scenario":"Driver crash.", "quiz":[{"question":"Airbag safety?","type":"multiple-choice","options":["Keep distance","Sit close"],"answer":"Keep distance"}]},
+        {"title":"Helmets for Motorcyclists","content":"Wear helmet.", "details":["Logic: Head protection"], "scenario":"Motorcycle crash.", "quiz":[{"question":"Helmet use?","type":"multiple-choice","options":["Always","Sometimes"],"answer":"Always"}]},
+        {"title":"Mini Quiz","content":"Review safety devices.", "details":["Scenario review"], "scenario":"Using safety devices saves lives.", "quiz":[{"question":"Why wear seat belt?","type":"multiple-choice","options":["Prevent injury","Nothing"],"answer":"Prevent injury"}]}
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Defensive Driving",
+      "parts": [
+        {"title":"Stay Alert","content":"Always pay attention.", "details":["Logic: Early hazard detection"], "scenario":"Sudden vehicle stop ahead.", "quiz":[{"question":"Defensive driving first rule?","type":"multiple-choice","options":["Stay alert","Ignore"],"answer":"Stay alert"}]},
+        {"title":"Anticipate Others","content":"Predict others’ actions.", "details":["Logic: Avoid crashes"], "scenario":"Vehicle may run stop sign.", "quiz":[{"question":"Predict others?","type":"multiple-choice","options":["Yes","No"],"answer":"Yes"}]},
+        {"title":"Avoid Aggression","content":"Keep calm and courteous.", "details":["Logic: Reduce risk"], "scenario":"Driver cuts off you.", "quiz":[{"question":"Aggressive drivers?","type":"multiple-choice","options":["Stay calm","Retaliate"],"answer":"Stay calm"}]},
+        {"title":"Maintain Space","content":"Keep safe following distance.", "details":["Logic: Reaction time"], "scenario":"Vehicle brakes suddenly.", "quiz":[{"question":"Following distance importance?","type":"multiple-choice","options":["Reaction time","Nothing"],"answer":"Reaction time"}]},
+        {"title":"Mini Quiz","content":"Review defensive driving.", "details":["Scenario review"], "scenario":"Defensive driving prevents accidents.", "quiz":[{"question":"Why anticipate other drivers?","type":"multiple-choice","options":["Avoid crashes","Nothing"],"answer":"Avoid crashes"}]}
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Traffic Laws",
+      "parts": [
+        {"title":"Speed Limits","content":"Obey posted limits.", "details":["Logic: Safety"], "scenario":"Highway driving.", "quiz":[{"question":"Speed limit importance?","type":"multiple-choice","options":["Safety","Nothing"],"answer":"Safety"}]},
+        {"title":"Right-of-Way Rules","content":"Yield when required.", "details":["Logic: Prevent conflicts"], "scenario":"Four-way stop.", "quiz":[{"question":"Right-of-way at stop?","type":"multiple-choice","options":["Yield when required","Ignore"],"answer":"Yield when required"}]},
+        {"title":"Traffic Citations","content":"Follow legal requirements.", "details":["Logic: Avoid fines"], "scenario":"Running red light.", "quiz":[{"question":"Traffic citation?","type":"multiple-choice","options":["Comply","Ignore"],"answer":"Comply"}]},
+        {"title":"Reporting Accidents","content":"Notify authorities.", "details":["Logic: Legal responsibility"], "scenario":"Minor crash.", "quiz":[{"question":"Accident reporting?","type":"multiple-choice","options":["Report","Ignore"],"answer":"Report"}]},
+        {"title":"Mini Quiz","content":"Review traffic laws.", "details":["Scenario review"], "scenario":"Legal compliance prevents issues.", "quiz":[{"question":"Why obey speed limits?","type":"multiple-choice","options":["Safety","Nothing"],"answer":"Safety"}]}
+      ]
+    },
+    {
+      "id": 48,
+      "title": "Vehicle Maintenance",
+      "parts": [
+        {"title":"Check Tires","content":"Maintain proper inflation.", "details":["Logic: Handling and braking"], "scenario":"Flat tire risk.", "quiz":[{"question":"Tire maintenance?","type":"multiple-choice","options":["Proper inflation","Ignore"],"answer":"Proper inflation"}]},
+        {"title":"Fluid Levels","content":"Check oil, brake, coolant.", "details":["Logic: Prevent failure"], "scenario":"Engine overheating.", "quiz":[{"question":"Check fluids why?","type":"multiple-choice","options":["Prevent failure","Nothing"],"answer":"Prevent failure"}]},
+        {"title":"Lights","content":"Ensure headlights, brake lights work.", "details":["Logic: Visibility"], "scenario":"Brake light burned out.", "quiz":[{"question":"Lights check importance?","type":"multiple-choice","options":["Visibility","Nothing"],"answer":"Visibility"}]},
+        {"title":"Windshield Wipers","content":"Replace worn blades.", "details":["Logic: Clear vision"], "scenario":"Rainy day visibility issue.", "quiz":[{"question":"Wiper maintenance?","type":"multiple-choice","options":["Replace worn","Ignore"],"answer":"Replace worn"}]},
+        {"title":"Mini Quiz","content":"Review vehicle maintenance.", "details":["Scenario review"], "scenario":"Maintaining vehicle prevents breakdowns.", "quiz":[{"question":"Why check tire pressure?","type":"multiple-choice","options":["Handling","Nothing"],"answer":"Handling"}]}
+      ]
+    },
+    {
+      "id": 49,
+      "title": "Environmental Driving",
+      "parts": [
+        {"title":"Fuel Efficiency","content":"Drive smoothly.", "details":["Logic: Save fuel and emissions"], "scenario":"Rapid acceleration wastes fuel.", "quiz":[{"question":"Eco-driving tip?","type":"multiple-choice","options":["Smooth driving","Aggressive"],"answer":"Smooth driving"}]},
+        {"title":"Idling","content":"Avoid unnecessary idling.", "details":["Logic: Reduces emissions"], "scenario":"Waiting in car long time.", "quiz":[{"question":"Idling impact?","type":"multiple-choice","options":["Increases emissions","Nothing"],"answer":"Increases emissions"}]},
+        {"title":"Car Maintenance","content":"Keep engine tuned.", "details":["Logic: Efficiency"], "scenario":"Poorly tuned car consumes more fuel.", "quiz":[{"question":"Engine tune?","type":"multiple-choice","options":["Increase efficiency","Nothing"],"answer":"Increase efficiency"}]},
+        {"title":"Tire Pressure","content":"Proper inflation saves fuel.", "details":["Logic: Rolling resistance"], "scenario":"Under-inflated tires.", "quiz":[{"question":"Tire pressure effect?","type":"multiple-choice","options":["Fuel efficiency","Nothing"],"answer":"Fuel efficiency"}]},
+        {"title":"Mini Quiz","content":"Review environmental driving.", "details":["Scenario review"], "scenario":"Eco-driving reduces impact.", "quiz":[{"question":"Why avoid rapid acceleration?","type":"multiple-choice","options":["Save fuel","Nothing"],"answer":"Save fuel"}]}
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Review & Test Prep",
+      "parts": [
+        {"title":"Comprehensive Review","content":"Go over all previous lessons.", "details":["Logic: Reinforce learning"], "scenario":"Study before test.", "quiz":[{"question":"Why review all lessons?","type":"multiple-choice","options":["Reinforce learning","Nothing"],"answer":"Reinforce learning"}]},
+        {"title":"Sample Test","content":"Take practice test.", "details":["Logic: Identify weak areas"], "scenario":"Practice questions simulate exam.", "quiz":[{"question":"Purpose of practice test?","type":"multiple-choice","options":["Identify weak areas","Nothing"],"answer":"Identify weak areas"}]},
+        {"title":"Time Management","content":"Learn pacing for written test.", "details":["Logic: Complete all questions"], "scenario":"Timed exam.", "quiz":[{"question":"Why manage time on test?","type":"multiple-choice","options":["Complete all questions","Nothing"],"answer":"Complete all questions"}]},
+        {"title":"Stress Reduction","content":"Relax and stay confident.", "details":["Logic: Improve performance"], "scenario":"Test anxiety.", "quiz":[{"question":"Stress management purpose?","type":"multiple-choice","options":["Improve performance","Nothing"],"answer":"Improve performance"}]},
+        {"title":"Final Mini Quiz","content":"Check readiness.", "details":["Scenario review"], "scenario":"Ensure understanding of all topics.", "quiz":[{"question":"Why final mini quiz?","type":"multiple-choice","options":["Check readiness","Nothing"],"answer":"Check readiness"}]}
+      ]
+    }
+  ]
+}
+
+
