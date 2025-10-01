@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Idaho Driver's Education Classroom</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+body { background-color: #f9fafb; }
+header { background-color: #1e3a8a; color: white; }
+nav a { margin: 0 10px; text-decoration: none; font-weight: bold; }
+.card { background-color: white; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; }
+.card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.button { padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: bold; text-decoration: none; }
+.button-primary { background-color: #1e3a8a; color: white; }
+.button-primary:hover { background-color: #2563eb; }
+.button-secondary { background-color: #6b7280; color: white; }
+.button-secondary:hover { background-color: #4b5563; }
+</style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+<header class="p-6 text-center">
+  <h1 class="text-4xl font-bold">Welcome to Idaho Driver's Education</h1>
+  <p class="mt-2 text-lg">Interactive Lessons & Practice Tests for Safe Driving</p>
+</header>
+
+<main class="flex-1 flex flex-col items-center justify-center p-6 space-y-6">
+
+  <div class="card max-w-xl text-center">
+    <h2 class="text-2xl font-bold mb-4">Start Learning Today</h2>
+    <p class="mb-4">Take interactive lessons to prepare for your Idaho driving test. Each lesson includes explanations, scenarios, and mini quizzes.</p>
+    <a href="lessons.html" class="button button-primary">Start Lessons</a>
+  </div>
+
+  <div class="card max-w-xl text-center">
+    <h2 class="text-2xl font-bold mb-4">Final Quiz</h2>
+    <p class="mb-4">Test your knowledge with the final quiz after completing all lessons. Make sure to finish each lesson first!</p>
+    <a href="lessons.html#final" class="button button-secondary">Go to Final Quiz</a>
+  </div>
+
+  <div class="card max-w-xl text-center">
+    <h2 class="text-2xl font-bold mb-4">About This Course</h2>
+    <p>This course is designed for Idaho learners preparing for their written driving test. Interactive lessons cover road signs, traffic rules, speed limits, and safe driving practices. Learning is fun, engaging, and fully online!</p>
+  </div>
+
+</main>
+
+<footer class="bg-gray-200 p-4 text-center">
+  <p class="text-gray-700">&copy; 2025 Idaho Driver's Education Classroom. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
