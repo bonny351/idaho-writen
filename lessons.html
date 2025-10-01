@@ -15,6 +15,9 @@ nav a { margin: 0 10px; text-decoration: none; font-weight: bold; }
 .lesson-part.active { display: block; }
 .disabled-link { cursor: not-allowed; opacity: 0.5; pointer-events: none; }
 .quiz-feedback { margin-top: 0.5rem; font-weight: bold; }
+.lesson-progress { display: flex; gap: 0.5rem; margin-bottom: 1rem; justify-content: center; }
+.lesson-progress span { width: 20px; height: 20px; display: inline-block; border-radius: 50%; background-color: #ccc; }
+.lesson-progress span.completed { background-color: #16a34a; }
 </style>
 </head>
 <body class="min-h-screen flex flex-col">
@@ -29,11 +32,14 @@ nav a { margin: 0 10px; text-decoration: none; font-weight: bold; }
   <a href="#" id="final-link" class="text-white disabled-link">Final Quiz</a>
 </nav>
 
-<main class="flex-1 p-6 max-w-4xl mx-auto" id="lessons-container">
-  <p class="text-center text-gray-500">Loading lessons...</p>
+<main class="flex-1 p-6 max-w-4xl mx-auto">
+  <div id="lesson-progress" class="lesson-progress"></div>
+  <div id="lessons-container">
+    <p class="text-center text-gray-500">Loading lessons...</p>
+  </div>
 </main>
 
-<!-- Final quiz section template -->
+<!-- Final quiz section -->
 <section id="final" class="lesson">
   <h2 class="text-2xl font-bold">Final Quiz</h2>
   <p class="mt-2 text-gray-700">Congratulations! Take the final test here after completing all lessons.</p>
@@ -54,13 +60,26 @@ fetch('driving_lessons.json')
   lessonsData = data.lessons;
   totalLessons = lessonsData.length;
   renderLessons();
+  renderProgress();
 })
 .catch(err => {
   document.getElementById('lessons-container').innerHTML =
     "<p class='text-red-500'>Failed to load lessons. Please try again later.</p>";
 });
 
-// Render all lessons and parts
+// Render lesson progress tracker
+function renderProgress(){
+  const progressContainer = document.getElementById('lesson-progress');
+  progressContainer.innerHTML = '';
+  for(let i=1;i<=totalLessons;i++){
+    const span = document.createElement('span');
+    span.id = `progress-${i}`;
+    if(lessonsCompleted[`lesson${i}`]) span.classList.add('completed');
+    progressContainer.appendChild(span);
+  }
+}
+
+// Render all lessons
 function renderLessons(){
   const container = document.getElementById('lessons-container');
   container.innerHTML = '';
@@ -95,6 +114,7 @@ function renderLessons(){
         partDiv.appendChild(scenario);
       }
 
+      // Quiz
       if(part.quiz){
         const quizDiv = document.createElement('div');
         quizDiv.innerHTML = `<p class="mt-2 font-bold">Mini Quiz</p>`;
@@ -140,13 +160,6 @@ function renderLessons(){
 
         form.appendChild(submitBtn);
         form.appendChild(feedback);
-
-        // Proper event listener for dynamic form
-        form.addEventListener('submit', e => {
-          e.preventDefault();
-          checkQuiz(form.id, 'lesson'+(idx+1), feedback);
-        });
-
         quizDiv.appendChild(form);
         partDiv.appendChild(quizDiv);
       }
@@ -182,7 +195,7 @@ function renderLessons(){
   });
 }
 
-// Show lesson and reset first part
+// Show lesson & reset first part
 function showLesson(id){
   document.querySelectorAll('.lesson').forEach(s=>s.classList.remove('active'));
   document.querySelectorAll('.lesson-part').forEach(p=>p.classList.remove('active'));
@@ -243,9 +256,10 @@ function checkQuiz(formId, lessonId, feedbackEl){
   }
 }
 
-// Lesson completion
+// Complete lesson
 function completeLesson(id){
   lessonsCompleted[id]=true;
+  renderProgress();
   if(Object.keys(lessonsCompleted).length===totalLessons){
     const finalLink = document.getElementById('final-link');
     finalLink.classList.remove('disabled-link');
@@ -255,9 +269,20 @@ function completeLesson(id){
   if(nextLessonNum<=totalLessons) showLesson('lesson'+nextLessonNum);
 }
 
-// Initial bindings
+// Event delegation for quiz submission
+document.getElementById('lessons-container').addEventListener('submit', function(e){
+  if(e.target.tagName.toLowerCase() === 'form'){
+    e.preventDefault();
+    const feedback = e.target.querySelector('.quiz-feedback');
+    const lessonId = e.target.closest('.lesson').id;
+    checkQuiz(e.target.id, lessonId, feedback);
+  }
+});
+
+// Initial link bindings
 document.getElementById('lessons-link').onclick = e => { e.preventDefault(); showLesson('lesson1'); };
 document.getElementById('final-link').onclick = e => { e.preventDefault(); alert('Complete all lessons first, then come back to take the final quiz.'); };
+
 </script>
 </body>
 </html>
