@@ -101,10 +101,10 @@ function renderLessons(){
           label.textContent = `${qIdx+1}. ${q.question}`;
           qDiv.appendChild(label);
 
-          // Shuffle options and mark correct
+          // Shuffle options
           const shuffledOptions = q.options
             .map(opt => ({ text: opt, isCorrect: opt === q.answer, sort: Math.random() }))
-            .sort((a,b)=> a.sort - b.sort);
+            .sort((a,b)=> a.sort-b.sort);
 
           shuffledOptions.forEach((opt,optIdx)=>{
             const optionId = `q${idx+1}-${pIdx+1}-${qIdx}-${optIdx}`;
@@ -162,7 +162,7 @@ function renderLessons(){
 
     const whyDiv = document.createElement('div');
     whyDiv.className='bg-gray-100 p-4 rounded mt-4';
-    whyDiv.innerHTML = `<strong>Why this matters:</strong> ${lesson.why || 'Learning this keeps you safe on the road.'}`;
+    whyDiv.innerHTML = `<strong>Why this matters:</strong> ${lesson.why || 'Understanding this lesson helps you drive safely.'}`;
     lessonSection.appendChild(whyDiv);
 
     container.appendChild(lessonSection);
@@ -204,8 +204,10 @@ function prevPart(button){
 
 function checkQuiz(formId, lessonId, feedbackEl){
   const form = document.getElementById(formId);
-  const questions = [...new Set(Array.from(form.querySelectorAll('input')).map(a=>a.name))];
+  const answers = Array.from(form.querySelectorAll('input[name^="q"]'));
   let correct = true;
+
+  const questions = [...new Set(answers.map(a=>a.name))];
 
   questions.forEach(qName=>{
     const radios = form[qName];
