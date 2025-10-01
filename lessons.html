@@ -13,7 +13,7 @@ nav a { margin: 0 10px; text-decoration: none; font-weight: bold; }
 .lesson.active { display: block; }
 .lesson-part { display: none; }
 .lesson-part.active { display: block; }
-.disabled-link { cursor: not-allowed; opacity: 0.5; }
+.disabled-link { cursor: not-allowed; opacity: 0.5; pointer-events: none; }
 .quiz-feedback { margin-top: 0.5rem; font-weight: bold; }
 </style>
 </head>
@@ -26,12 +26,18 @@ nav a { margin: 0 10px; text-decoration: none; font-weight: bold; }
 
 <nav class="bg-blue-800 p-3 text-center">
   <a href="#" id="lessons-link" class="text-white">Lessons</a>
-  <a href="#" id="final-link" class="text-white disabled-link" onclick="quizLocked()">Final Quiz</a>
+  <a href="#" id="final-link" class="text-white disabled-link">Final Quiz</a>
 </nav>
 
 <main class="flex-1 p-6 max-w-4xl mx-auto" id="lessons-container">
   <p class="text-center text-gray-500">Loading lessons...</p>
 </main>
+
+<!-- Final quiz section template -->
+<section id="final" class="lesson">
+  <h2 class="text-2xl font-bold">Final Quiz</h2>
+  <p class="mt-2 text-gray-700">Congratulations! Take the final test here after completing all lessons.</p>
+</section>
 
 <script>
 let lessonsData = [];
@@ -54,6 +60,7 @@ fetch('driving_lessons.json')
     "<p class='text-red-500'>Failed to load lessons. Please try again later.</p>";
 });
 
+// Render all lessons and parts
 function renderLessons(){
   const container = document.getElementById('lessons-container');
   container.innerHTML = '';
@@ -110,7 +117,7 @@ function renderLessons(){
             const optionId = `q${idx+1}-${pIdx+1}-${qIdx}-${optIdx}`;
             const input = document.createElement('input');
             input.type='radio';
-            input.name=`q${qIdx}`;
+            input.name=`lesson${idx+1}-part${pIdx+1}-q${qIdx}`;
             input.id = optionId;
             input.value = opt.isCorrect ? 'correct' : 'wrong';
             const optionLabel = document.createElement('label');
@@ -169,13 +176,18 @@ function renderLessons(){
   });
 }
 
+// Show lesson and reset to first part
 function showLesson(id){
+  document.querySelectorAll('.lesson').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.lesson-part').forEach(p=>p.classList.remove('active'));
   const lessonEl = document.getElementById(id);
   if(!lessonEl) return;
-  document.querySelectorAll('.lesson').forEach(s=>s.classList.remove('active'));
   lessonEl.classList.add('active');
+  const firstPart = lessonEl.querySelector('.lesson-part');
+  if(firstPart) firstPart.classList.add('active');
 }
 
+// Navigate parts
 function nextPart(button){
   const parts = button.closest('.lesson').querySelectorAll('.lesson-part');
   for(let i=0;i<parts.length;i++){
@@ -188,7 +200,6 @@ function nextPart(button){
     }
   }
 }
-
 function prevPart(button){
   const parts = button.closest('.lesson').querySelectorAll('.lesson-part');
   for(let i=0;i<parts.length;i++){
@@ -202,9 +213,10 @@ function prevPart(button){
   }
 }
 
+// Quiz checking
 function checkQuiz(formId, lessonId, feedbackEl){
   const form = document.getElementById(formId);
-  const answers = Array.from(form.querySelectorAll('input[name^="q"]'));
+  const answers = Array.from(form.querySelectorAll('input[name^="lesson"]'));
   let correct = true;
 
   const questions = [...new Set(answers.map(a=>a.name))];
@@ -225,22 +237,21 @@ function checkQuiz(formId, lessonId, feedbackEl){
   }
 }
 
+// Complete lesson logic
 function completeLesson(id){
   lessonsCompleted[id]=true;
   if(Object.keys(lessonsCompleted).length===totalLessons){
     const finalLink = document.getElementById('final-link');
     finalLink.classList.remove('disabled-link');
-    finalLink.onclick=()=>showLesson('final');
+    finalLink.onclick = e => { e.preventDefault(); showLesson('final'); };
   }
   const nextLessonNum=parseInt(id.replace('lesson',''))+1;
   if(nextLessonNum<=totalLessons) showLesson('lesson'+nextLessonNum);
 }
 
-function quizLocked(){ 
-  alert('Complete all lessons first, then come back to take the final quiz.'); 
-}
-
-document.getElementById('lessons-link').onclick=()=>showLesson('lesson1');
+// Initial bindings
+document.getElementById('lessons-link').onclick = e => { e.preventDefault(); showLesson('lesson1'); };
+document.getElementById('final-link').onclick = e => { e.preventDefault(); alert('Complete all lessons first, then come back to take the final quiz.'); };
 </script>
 </body>
 </html>
